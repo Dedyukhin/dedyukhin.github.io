@@ -1,4 +1,4 @@
-<div style="display: flex; flex-wrap: wrap; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; max-width: 800px; margin: 0 auto; padding: 0 20px;">
     <div style="flex: 1; min-width: 250px; padding-right: 20px;">
         <p>
             This is the text that will appear on the left side of the image. It will automatically adjust based on the screen size, ensuring a good appearance on both desktop and mobile devices.
