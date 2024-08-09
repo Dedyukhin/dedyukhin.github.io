@@ -12,6 +12,9 @@ collections:
   posts:
     output          : true
 
+#Theme
+remote_theme: pages-themes/minimal@v0.2.0
+
 # Handling Reading
 safe                : false
 include             : [".htaccess"]
@@ -29,7 +32,8 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : []
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Conversion
 markdown            : kramdown
