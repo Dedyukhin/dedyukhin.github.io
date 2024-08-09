@@ -15,6 +15,46 @@ collections:
 #Theme
 remote_theme: pages-themes/minimal@v0.2.0
 
+
+# Site Author
+author:
+  name             : "Ivan Dedyukhin"
+  avatar           : "Career photo.JPG"
+  bio              : "Experimental Economics, game theory"
+  employer         : "Indiana University"
+  location         : "Bloomington, IN"
+  googlescholar    : 
+  email            : "idedyukh@iu.edu
+  researchgate     : 
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : "ivan.dedyukhin.3"
+  foursquare       :
+  github           : "Dedyukhin"
+  google_plus      :
+  keybase          :
+  instagram        : "duduhin"
+  impactstory      : 
+  lastfm           :
+  linkedin         :
+  orcid            : 
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : 
+  steam            :
+  tumblr           :
+  twitter          : "duduhin"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
+
+
+
 # Handling Reading
 safe                : false
 include             : [".htaccess"]
