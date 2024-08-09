@@ -59,11 +59,33 @@
         .horizontal-nav a:hover {
             text-decoration: underline;
         }
+
+        /* Social links styling */
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <nav>
         <h2>{{ site.data.navigation.docs_list_title }}</h2>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
         <ul class="horizontal-nav">
             {% for item in site.data.navigation.docs %}
                 <li><a href="{{ item.url }}">{{ item.title }}</a></li>
@@ -76,4 +98,5 @@
     </div>
 </body>
 </html>
+
 
