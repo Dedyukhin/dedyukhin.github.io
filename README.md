@@ -8,7 +8,8 @@
         </p>
     </div>
     <div style="flex: 1; min-width: 250px;">
-        <img src="images/Career photo.JPG" alt="Alt text" style="width: 100%; max-width: 400px; height: auto;">
+        <img src="images/Career photo.JPG" alt="Alt text" style="width: 100%; max-width: 200px; height: auto;">
     </div>
 </div>
+
 
