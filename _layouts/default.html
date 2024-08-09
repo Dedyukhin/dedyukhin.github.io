@@ -1,11 +1,75 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-  </head>
-  <body>
-    {{ content }}
-  </body>
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background-color: white;
+            color: black;
+            padding: 15px;
+        }
+
+        nav h2 {
+            color: black;
+            margin: 0 0 10px 0;
+        }
+
+        /* Full width layout */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .horizontal-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .horizontal-nav li {
+            margin-right: 15px;
+        }
+
+        .horizontal-nav li:last-child {
+            margin-right: 0;
+        }
+
+        .horizontal-nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .horizontal-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>{{ site.data.navigation.docs_list_title }}</h2>
+        <ul class="horizontal-nav">
+            {% for item in site.data.navigation.docs %}
+                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
 </html>
 
