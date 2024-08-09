@@ -1,14 +1,15 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+
 <style>
     p {
         margin-bottom: 10px; /* Adjust the value to decrease spacing */
     }
 </style>
 
----
-layout: default
-title: Research
-permalink: /research/
----
 
 Working papers
 ---
