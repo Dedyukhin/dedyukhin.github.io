@@ -1,14 +1,14 @@
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1; padding-right: 20px;">
+<div style="display: flex; flex-wrap: wrap; align-items: center;">
+    <div style="flex: 1; min-width: 250px; padding-right: 20px;">
         <p>
-            This is the text that will appear on the left side of the image. You can write as much text as needed here. The text will be aligned to the left of the image, creating a nice side-by-side layout.
+            This is the text that will appear on the left side of the image. It will automatically adjust based on the screen size, ensuring a good appearance on both desktop and mobile devices.
         </p>
         <p>
-            You can add more paragraphs or any other HTML content here. The text will wrap naturally around the image if it's long enough.
+            You can add more paragraphs or any other HTML content here. The layout will stack vertically on smaller screens.
         </p>
     </div>
-    <div style="flex: 1;">
-        <img src="images/Career photo.JPG" alt="Alt text" style="height: 300px;">
+    <div style="flex: 1; min-width: 250px;">
+        <img src="images/Career photo.JPG" alt="Alt text" style="width: 100%; max-width: 400px; height: auto;">
     </div>
 </div>
 
