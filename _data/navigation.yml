@@ -2,10 +2,10 @@ docs_list_title: Navigation
 docs:
 
 - title: Research
-  url: research/
+  url: /research/
 
 - title: Teaching
-  url: teaching/
+  url: /teaching/
 
 - title: Hobby
-  url: hobby/
+  url: /hobby/
