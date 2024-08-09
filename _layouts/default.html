@@ -51,9 +51,22 @@
             margin-right: 0;
         }
 
+        /* Navigation bar link styling */
         .horizontal-nav a {
             text-decoration: underline;
             color: white;
+        }
+        
+        /* Highlight the active/current page */
+        .horizontal-nav a.active {
+            color: yellow; /* Change the color to highlight */
+            font-weight: bold; /* Optionally, make the text bold */
+            text-decoration: none; /* Optionally, remove underline */
+        }
+        
+        /* Optional: Remove underline on hover for active link */
+        .horizontal-nav a.active:hover {
+            text-decoration: none;
         }
 
         .horizontal-nav a:hover {
@@ -88,7 +101,11 @@
         </div>
         <ul class="horizontal-nav">
             {% for item in site.data.navigation.docs %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                <li>
+                    <a href="{{ item.url }}" class="{% if page.url == item.url %}active{% endif %}">
+                        {{ item.title }}
+                    </a>
+                </li>
             {% endfor %}
         </ul>
     </nav>
