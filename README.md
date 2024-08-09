@@ -1,3 +1,3 @@
 # Main page text
 
-![Alt text](path/to/image.jpg)
+![Alt text](images/Career photo.JPG)
