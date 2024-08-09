@@ -29,11 +29,15 @@
             background-color:  #990000;
             color: #EDEBEB;
             padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav h2 {
             color: #EDEBEB;
-            margin: 0 0 10px 0;
+            margin: 0;
+            order: 2; /* Move the title to the right side */
         }
 
         .horizontal-nav {
@@ -41,6 +45,7 @@
             padding: 0;
             margin: 0;
             display: flex;
+            order: 1; /* Move the navigation links to the left side */
         }
 
         .horizontal-nav li {
@@ -92,13 +97,6 @@
 </head>
 <body>
     <nav>
-        <h2>{{ site.data.navigation.docs_list_title }}</h2>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
         <ul class="horizontal-nav">
             {% for item in site.data.navigation.docs %}
                 <li>
@@ -108,12 +106,21 @@
                 </li>
             {% endfor %}
         </ul>
+        <h2>{{ site.data.navigation.docs_list_title }}</h2>
     </nav>
     
     <div class="container">
         {{ content }}
     </div>
+
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
 </body>
 </html>
+
 
 
