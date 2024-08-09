@@ -26,18 +26,23 @@
 
         /* Navigation bar styling */
         nav {
-            background-color:  #990000;
+            background-color: #990000;
             color: #EDEBEB;
-            padding: 5px;
+            padding: 10px 20px; /* Add some padding for better spacing */
             display: flex;
+            flex-wrap: wrap; /* Allow wrapping of elements */
             justify-content: space-between;
             align-items: center;
+            border-bottom: 3px solid #EDEBEB; /* Add a bottom border */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
 
         nav h2 {
             color: #EDEBEB;
             margin: 0;
-            order: 2; /* Move the title to the right side */
+            order: 1; /* Move the title to the left side */
+            font-size: 1.5em; /* Increase font size */
+            flex: 1 1 100%; /* Ensure the title can wrap and take full width if needed */
         }
 
         .horizontal-nav {
@@ -45,11 +50,14 @@
             padding: 0;
             margin: 0;
             display: flex;
-            order: 1; /* Move the navigation links to the left side */
+            order: 2; /* Move the navigation links to the right side */
+            flex: 1 1 100%; /* Ensure the nav links can wrap and take full width if needed */
+            justify-content: flex-end; /* Align links to the right */
+            flex-wrap: wrap; /* Allow wrapping of links */
         }
 
         .horizontal-nav li {
-            margin-right: 15px;
+            margin-right: 20px; /* Increase the spacing between links */
         }
 
         .horizontal-nav li:last-child {
@@ -58,38 +66,46 @@
 
         /* Navigation bar link styling */
         .horizontal-nav a {
-            text-decoration: underline;
+            text-decoration: none; /* Remove underline */
             color: #EDEBEB;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 4px; /* Add rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
         }
         
         /* Highlight the active/current page */
         .horizontal-nav a.active {
-            color: white; /* Change the color to highlight */
-            font-weight: bold; /* Optionally, make the text bold */
-            text-decoration: none; /* Optionally, remove underline */
-        }
-        
-        /* Optional: Remove underline on hover for active link */
-        .horizontal-nav a.active:hover {
-            text-decoration: none;
+            background-color: #EDEBEB; /* Change the background color to highlight */
+            color: #990000; /* Text color for the active link */
         }
 
+        /* Hover effect for navigation links */
         .horizontal-nav a:hover {
-            text-decoration: underline;
+            background-color: #EDEBEB; /* Lighten background on hover */
+            color: #990000; /* Change text color on hover */
         }
 
         /* Social links styling */
         .social-links {
-            margin-top: 10px;
+            margin-top: 20px;
             display: flex;
             justify-content: center; /* Centers the links horizontally */
+            max-width: 800px;
+            margin: 20px auto; /* Add some margin for spacing */
+            padding: 0 20px;
         }
         
         .social-links a {
-            color: #EDEBEB;
+            color: #990000;
             text-decoration: none;
             margin-right: 15px;
             font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #990000;
+            border-radius: 4px; /* Add rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
         }
         
         .social-links a:last-child {
@@ -97,13 +113,15 @@
         }
         
         .social-links a:hover {
-            text-decoration: underline;
+            background-color: #990000;
+            color: #EDEBEB; /* Invert colors on hover */
         }
 
     </style>
 </head>
 <body>
     <nav>
+        <h2>{{ site.data.navigation.docs_list_title }}</h2>
         <ul class="horizontal-nav">
             {% for item in site.data.navigation.docs %}
                 <li>
@@ -113,14 +131,13 @@
                 </li>
             {% endfor %}
         </ul>
-        <h2>{{ site.data.navigation.docs_list_title }}</h2>
     </nav>
     
     <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; max-width: 800px; margin: 0 auto; padding: 0 20px;">
         {{ content }}
     </div>
 
-    <div class="social-links" style="display: flex; flex-wrap: wrap; align-items: center; max-width: 800px; margin: 0 auto; padding: 0 20px;">
+    <div class="social-links">
         <a href="https://facebook.com" target="_blank">Facebook</a>
         <a href="https://twitter.com" target="_blank">Twitter</a>
         <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -128,6 +145,5 @@
     </div>
 </body>
 </html>
-
 
 
