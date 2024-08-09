@@ -30,19 +30,19 @@
             color: #EDEBEB;
             padding: 10px 20px; /* Add some padding for better spacing */
             display: flex;
-            flex-wrap: wrap; /* Allow wrapping of elements */
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #EDEBEB; /* Add a bottom border */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            flex-wrap: nowrap; /* Prevent wrapping initially */
         }
 
         nav h2 {
             color: #EDEBEB;
             margin: 0;
-            order: 1; /* Move the title to the left side */
             font-size: 1.5em; /* Increase font size */
-            flex: 1 1 100%; /* Ensure the title can wrap and take full width if needed */
+            flex: 1; /* Let the title take up available space */
+            white-space: nowrap; /* Prevent title from wrapping */
         }
 
         .horizontal-nav {
@@ -50,18 +50,13 @@
             padding: 0;
             margin: 0;
             display: flex;
-            order: 2; /* Move the navigation links to the right side */
-            flex: 1 1 100%; /* Ensure the nav links can wrap and take full width if needed */
-            justify-content: flex-end; /* Align links to the right */
-            flex-wrap: wrap; /* Allow wrapping of links */
+            justify-content: flex-end;
+            flex: 1;
+            flex-wrap: nowrap; /* Prevent wrapping initially */
         }
 
         .horizontal-nav li {
-            margin-right: 20px; /* Increase the spacing between links */
-        }
-
-        .horizontal-nav li:last-child {
-            margin-right: 0;
+            margin-left: 20px; /* Space between links */
         }
 
         /* Navigation bar link styling */
@@ -86,35 +81,26 @@
             color: #990000; /* Change text color on hover */
         }
 
-        /* Social links styling */
-        .social-links {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center; /* Centers the links horizontally */
-            max-width: 800px;
-            margin: 20px auto; /* Add some margin for spacing */
-            padding: 0 20px;
-        }
-        
-        .social-links a {
-            color: #990000;
-            text-decoration: none;
-            margin-right: 15px;
-            font-size: 14px;
-            font-weight: bold;
-            padding: 5px 10px;
-            border: 1px solid #990000;
-            border-radius: 4px; /* Add rounded corners */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-        }
-        
-        .social-links a:last-child {
-            margin-right: 0; /* Remove the right margin from the last link */
-        }
-        
-        .social-links a:hover {
-            background-color: #990000;
-            color: #EDEBEB; /* Invert colors on hover */
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            }
+
+            .horizontal-nav {
+                justify-content: center; /* Center links on smaller screens */
+                flex-wrap: wrap; /* Allow wrapping of links */
+                margin-top: 10px; /* Add some spacing above links */
+            }
+
+            .horizontal-nav li {
+                margin: 10px 0; /* Add spacing between wrapped links */
+            }
+
+            nav h2 {
+                flex: 1 1 100%; /* Make title take full width on smaller screens */
+                text-align: center; /* Center the title */
+            }
         }
 
     </style>
@@ -145,5 +131,6 @@
     </div>
 </body>
 </html>
+
 
 
