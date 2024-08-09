@@ -7,9 +7,10 @@
             You can add more paragraphs or any other HTML content here. The layout will stack vertically on smaller screens.
         </p>
     </div>
-    <div style="flex: 1; min-width: 250px;">
+    <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
         <img src="images/Career photo.JPG" alt="Alt text" style="width: 100%; max-width: 200px; height: auto;">
     </div>
 </div>
+
 
 
