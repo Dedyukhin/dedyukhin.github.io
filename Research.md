@@ -13,6 +13,7 @@ _with Alexeev, Michael V. and Polishchuk, Leonid_
 
 - **[Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?](https://ssrn.com/abstract=4906864)**
 _with Yushkov, A. and Alexeev, M._
+  * R&R in International Journal of Public Administration
 
 Work in progress
 ---
