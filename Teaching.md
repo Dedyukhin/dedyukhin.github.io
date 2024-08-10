@@ -13,7 +13,5 @@ permalink: /teaching/
 
 Undergraduate
 ---
-- **Fundamentals Of Economics For Business 1**
-  * The first course in a two-course sequence that introduces business students to essential economic concepts. Examines the economic notions of cost and gains from trade, determinants of economic growth, consumer and firm behavior in competitive and non-competitive environments, the effects of taxation, externalities, moral hazard, and adverse selection, and basic game theory.
-  * Syllabus
+- **[Fundementals Of Economics For Business I](https://ssrn.com/abstract=4906864)**
 
