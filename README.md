@@ -4,7 +4,7 @@
             I am a third year Economics PhD student at Indiana University Bloomington.
         </p>
         <p>
-            My primary research interests are experimental economics, game theory, public good games.
+            My primary research interests are experimental economics, game theory, repeated games.
         </p>
         <p>
             <strong>Email:</strong> <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a><br>
