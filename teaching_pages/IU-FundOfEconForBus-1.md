@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Fundamentals of Economics for Business - 1 (Indiana University)"
 permalink: /teaching/Fund-Of-Econ-Bus-1-Indiana
 ---
