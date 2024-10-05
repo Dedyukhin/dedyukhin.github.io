@@ -17,3 +17,5 @@ _with Alexeev, Michael V. and Polishchuk, Leonid_
 Work in progress
 ---
 - **Endogenous continuation in repeated public good games**
+- **What strategies drives framing effects in repeated games**
+
