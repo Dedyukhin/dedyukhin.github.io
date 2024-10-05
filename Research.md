@@ -16,4 +16,4 @@ _with Alexeev, Michael V. and Polishchuk, Leonid_
 
 Work in progress
 ---
-- **Endogenous continuation in repeated public good games **
+- **Endogenous continuation in repeated public good games**
