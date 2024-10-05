@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Body styling */
         body {
             margin: 0;
             padding: 0;
-            font-family: "Helvetica Neue", sans-serif;
-            font-size: 18px; /* Increase this value to make the text larger */
+            font-family: 'Inter', sans-serif;
+            font-size: 16px; /* Base font size */
             background-color: white;
             color: #243142;
         }
@@ -18,32 +19,39 @@
         /* Full width layout */
         .container {
             width: 100%;
-            margin: 0;
+            margin: 0 auto;
             padding: 5px;
-            overflow: hidden; /* Prevents overflow */
-            box-sizing: border-box; /* Ensures padding is included in the width calculation */
-            word-wrap: break-word; /* Breaks long words to fit within the container */
+            max-width: 1200px; /* Wider on larger screens */
+            box-sizing: border-box;
+            word-wrap: break-word;
         }
 
         /* Navigation bar styling */
         nav {
             background-color: #990000;
             color: #EDEBEB;
-            padding: 10px 20px; /* Add some padding for better spacing */
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 3px solid #EDEBEB; /* Add a bottom border */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-            flex-wrap: nowrap; /* Prevent wrapping initially */
+            border-bottom: 3px solid #EDEBEB;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         nav h2 {
-            color: #EDEBEB;
             margin: 0;
-            font-size: 1.5em; /* Increase font size */
-            flex: 1; /* Let the title take up available space */
-            white-space: nowrap; /* Prevent title from wrapping */
+            font-size: 1.3em;
+            white-space: nowrap;
+        }
+
+        nav h2 a {
+            color: #EDEBEB;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav h2 a:hover {
+            color: #DC231E;
         }
 
         .horizontal-nav {
@@ -52,55 +60,56 @@
             margin: 0;
             display: flex;
             justify-content: flex-end;
-            flex: 1;
-            flex-wrap: nowrap; /* Prevent wrapping initially */
         }
 
         .horizontal-nav li {
-            margin-left: 20px; /* Space between links */
+            margin-left: 20px;
         }
 
         /* Navigation bar link styling */
         .horizontal-nav a {
-            text-decoration: none; /* Remove underline */
+            text-decoration: none;
             color: #EDEBEB;
-            padding: 5px 10px;
-            font-weight: bold;
-            border-radius: 4px; /* Add rounded corners */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-        }
-        
-        /* Highlight the active/current page */
-        .horizontal-nav a.active {
-            background-color: #EDEBEB; /* Change the background color to highlight */
-            color: #990000; /* Text color for the active link */
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Hover effect for navigation links */
+        .horizontal-nav a.active {
+            background-color: #EDEBEB;
+            color: #990000;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
         .horizontal-nav a:hover {
-            background-color: #EDEBEB; /* Lighten background on hover */
-            color: #990000; /* Change text color on hover */
+            background-color: #EDEBEB;
+            color: #990000;
         }
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
+            body {
+                font-size: 14px; /* Smaller font on mobile */
+            }
+
             nav {
-                flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            }
-
-            .horizontal-nav {
-                justify-content: center; /* Center links on smaller screens */
-                flex-wrap: wrap; /* Allow wrapping of links */
-                margin-top: 15px; /* Add some spacing above links */
-            }
-
-            .horizontal-nav li {
-                margin: 5px 0; /* Add spacing between wrapped links */
+                flex-wrap: wrap;
+                padding: 15px 10px;
             }
 
             nav h2 {
-                flex: 1 1 100%; /* Make title take full width on smaller screens */
-                text-align: center; /* Center the title */
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .horizontal-nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+
+            .horizontal-nav li {
+                margin-left: 10px;
             }
         }
 
@@ -108,49 +117,44 @@
         .social-links {
             margin-top: 20px;
             display: flex;
-            justify-content: center; /* Centers the links horizontally */
+            justify-content: center;
+            flex-wrap: wrap;
             max-width: 800px;
-            margin: 20px 0; /* Add some margin for spacing */
-            padding: 0 20px;
+            margin: 20px auto;
         }
-        
+
         .social-links a {
             color: #990000;
             text-decoration: none;
             margin-right: 15px;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 600;
             padding: 5px 10px;
             border: 1px solid #990000;
-            border-radius: 4px; /* Add rounded corners */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-            margin-bottom: 10px; /* Add space between wrapped links */
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-bottom: 10px;
         }
-        
-        .social-links a:last-child {
-            margin-right: 0; /* Remove the right margin from the last link */
-        }
-        
+
         .social-links a:hover {
             background-color: #990000;
-            color: #EDEBEB; /* Invert colors on hover */
+            color: #EDEBEB;
         }
 
         a {
-            color: #990000; /* Change to your desired color */
-            text-decoration: none; /* Optional: Removes the underline from links */
+            color: #990000;
+            text-decoration: none;
         }
         
         a:hover {
-            color: #DC231E; /* Optional: Change color on hover */
-            text-decoration: underline; /* Optional: Adds underline on hover */
+            color: #DC231E;
+            text-decoration: underline;
         }
-        
     </style>
 </head>
 <body>
     <nav>
-        <h2>{{ site.data.navigation.docs_list_title }}</h2>
+        <h2><a href="/"> {{ site.data.navigation.docs_list_title }} </a></h2>
         <ul class="horizontal-nav">
             {% for item in site.data.navigation.docs %}
                 <li>
@@ -162,11 +166,11 @@
         </ul>
     </nav>
     
-    <div class="container" style="align-items: center; max-width: 800px; margin: 0 auto; padding: 0 20px;">
+    <div class="container">
         {{ content }}
     </div>
 
-    <div class="social-links" style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 800px; margin: 30px auto; padding: 0 30px;">
+    <div class="social-links">
         <a href="https://www.facebook.com/ivan.dedyukhin.3/" target="_blank">Facebook</a>
         <a href="https://x.com/duduhin" target="_blank">X (Twitter)</a>
         <a href="https://www.linkedin.com/in/ivan-dedyukhin/" target="_blank">LinkedIn</a>
@@ -175,6 +179,3 @@
     </div>
 </body>
 </html>
-
-
-
