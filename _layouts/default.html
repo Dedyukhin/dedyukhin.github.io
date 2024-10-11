@@ -4,121 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* Body styling */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px; /* Base font size */
             background-color: white;
-            color: black;
-            text-align: center;
+            color: #243142;
         }
 
+        /* Full width layout */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px;
+            max-width: 1200px; /* Wider on larger screens */
+            box-sizing: border-box;
+            word-wrap: break-word;
+        }
+
+        /* Navigation bar styling */
         nav {
-            margin: 20px 0;
+            background-color: #990000;
+            color: #EDEBEB;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #EDEBEB;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        nav ul {
+        nav h2 {
+            margin: 0;
+            font-size: 1.3em;
+            white-space: nowrap;
+        }
+
+        nav h2 a {
+            color: #EDEBEB;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav h2 a:hover {
+            color: #DC231E;
+        }
+
+        .horizontal-nav {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
         }
 
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px;
+        .horizontal-nav li {
+            margin-left: 20px;
         }
 
-        nav ul li a {
+        /* Navigation bar link styling */
+        .horizontal-nav a {
             text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
+            color: #EDEBEB;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .container {
+        .horizontal-nav a.active {
+            background-color: #EDEBEB;
+            color: #990000;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .horizontal-nav a:hover {
+            background-color: #EDEBEB;
+            color: #990000;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px; /* Smaller font on mobile */
+            }
+
+            nav {
+                flex-wrap: wrap;
+                padding: 15px 10px;
+            }
+
+            nav h2 {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .horizontal-nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+
+            .horizontal-nav li {
+                margin-left: 10px;
+            }
+        }
+
+        /* Social links styling */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
+            margin: 20px auto;
         }
 
-        img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+        .social-links a {
+            color: #990000;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border: 1px solid #990000;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-bottom: 10px;
         }
 
-        h1 {
-            margin: 20px 0;
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
+        .social-links a:hover {
+            background-color: #990000;
+            color: #EDEBEB;
         }
 
         a {
-            color: black;
+            color: #990000;
             text-decoration: none;
         }
-
+        
         a:hover {
+            color: #DC231E;
             text-decoration: underline;
-        }
-
-        .publications, .teaching {
-            text-align: left;
-            margin: 40px auto;
-        }
-
-        .publications h2, .teaching h2 {
-            text-align: center;
-        }
-
-        .publications ul, .teaching ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .publications ul li, .teaching ul li {
-            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#">cv</a></li>
-            <li><a href="#">research</a></li>
-            <li><a href="#">teaching</a></li>
-            <li><a href="#">github</a></li>
+        <h2><a href="/"> {{ site.data.navigation.docs_list_title }} </a></h2>
+        <ul class="horizontal-nav">
+            {% for item in site.data.navigation.docs %}
+                <li>
+                    <a href="{{ item.url }}" class="{% if page.url == item.url %}active{% endif %}">
+                        {{ item.title }}
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </nav>
-
+    
     <div class="container">
-        <img src="your-image-url.jpg" alt="Profile Picture">
-        <h1>Piotr Evdokimov</h1>
-        <p>Experimental economist, University of Minnesota PhD.<br>Currently a guest researcher at Humboldt University (Berlin).<br>You can reach me at <a href="mailto:pevdokim@gmail.com">pevdokim@gmail.com</a>.</p>
+        {{ content }}
     </div>
 
-    <div class="publications container">
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="#">Parallel Markets in School Choice</a> (Games and Economic Behavior, 2022)</li>
-            <li><a href="#">Higher-order Learning</a> (Forthcoming, Experimental Economics, 2021)</li>
-            <li><a href="#">Communication and Behavior in Organizations</a> (Quantitative Economics, 2019)</li>
-            <li><a href="#">Third-party Manipulation of Conflict</a> (Experimental Economics, 2018)</li>
-            <li><a href="#">Forward Induction: Thinking and Behavior</a> (JEBO, 2016)</li>
-        </ul>
-    </div>
-
-    <div class="teaching container">
-        <h2>Current Teaching</h2>
-        <ul>
-            <li><a href="#">Experimental Economics, MA-level (Spring 2022)</a></li>
-        </ul>
+    <div class="social-links">
+        <a href="https://www.facebook.com/ivan.dedyukhin.3/" target="_blank">Facebook</a>
+        <a href="https://x.com/duduhin" target="_blank">X (Twitter)</a>
+        <a href="https://www.linkedin.com/in/ivan-dedyukhin/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/duduhin/" target="_blank">Instagram</a>
+        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508" target="_blank">SSRN</a>
     </div>
 </body>
 </html>
