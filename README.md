@@ -8,10 +8,10 @@
         </p>
 
         <p>
-        Wylie Hall,
-        Indiana University,
-        100 South Woodlawn Avenue,
-        Bloomington, IN 47405
+            Wylie Hall,
+            Indiana University,
+            100 South Woodlawn Avenue,
+            Bloomington, IN 47405
         </p>
         
         <p>
