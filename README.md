@@ -4,8 +4,16 @@
             I am a third year Economics PhD student at Indiana University Bloomington.
         </p>
         <p>
-            My primary research interests are experimental economics, game theory, repeated games.
+            My primary research interests are experimental economics, game theory, and repeated games.
         </p>
+
+        <p>
+        Wylie Hall,
+        Indiana University,
+        100 South Woodlawn Avenue,
+        Bloomington, IN 47405
+        </p>
+        
         <p>
             <strong>Email:</strong> <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a><br>
         </p>
