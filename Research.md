@@ -12,6 +12,7 @@ Publications
 <!--   <button class="abstract-button" onclick="toggleAbstract('abstract1')">View Abstract</button>
   <div id="abstract1" class="abstract-container">This paper discusses the fiscal health of local governments in Russia, analyzing the implications of fiscal federalism...</div>
  -->
+
 Working papers
 ---
 - **[Ownership, Asymmetric Information, and Quality of Care for the Elderly: Evidence From US Nursing Homes During the COVID-19 Pandemic](https://ssrn.com/abstract=4906864)**  
