@@ -4,33 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-<style>
-  .abstract-button {
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    padding: 5px 10px; 
-    font-size: 14px; 
-    cursor: pointer; 
-    border-radius: 4px; 
-    transition: background-color 0.3s;
-  }
-  .abstract-button:hover {
-    background-color: #0056b3;
-  }
-  .abstract-container {
-    display: none; 
-    margin-top: 10px;
-  }
-  .publication-info {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  .author-names {
-    font-weight: bold;
-  }
-</style>
-
 Publications
 ---
 - **[Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?](https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133)**  
@@ -67,3 +40,30 @@ function toggleAbstract(id) {
   abstract.style.display = abstract.style.display === "none" ? "block" : "none";
 }
 </script>
+
+<style>
+  .abstract-button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  .abstract-button:hover {
+    color: #0056b3;
+  }
+  .abstract-container {
+    display: none;
+    margin-top: 10px;
+  }
+  .publication-info {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .author-names {
+    font-weight: bold;
+  }
+</style>
