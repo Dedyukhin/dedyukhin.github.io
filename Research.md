@@ -24,12 +24,8 @@ Working papers
 Work in progress
 ---
 - **Endogenous continuation in repeated public good games**  
-  <div class="publication-info">Work in Progress</div>  
-  <div class="author-names">Ivan Dedyukhin</div>  
 
 - **What strategies drive framing effects in repeated games?**  
-  <div class="publication-info">Work in Progress</div>  
-  <div class="author-names">Ivan Dedyukhin</div>  
 
 <script>
 function toggleAbstract(id) {
