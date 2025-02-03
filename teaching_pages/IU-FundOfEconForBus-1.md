@@ -12,7 +12,3 @@ The first course in a two-course sequence that introduces business students to e
 <iframe src="/files/Syllabus SP24-B251-9998.pdf" width="100%" height="600px">
     This browser does not support PDFs. Please download the PDF to view it: <a href="/files/Syllabus SP24-B251-9998.pdf">Download PDF</a>.
 </iframe>
-
-### Evaluation
-
-
