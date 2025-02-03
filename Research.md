@@ -23,9 +23,8 @@ Working papers
 
 Work in progress
 ---
-- **Endogenous continuation in repeated public good games**  
-
-- **What strategies drive framing effects in repeated games?**  
+- **When Cooperation Drives Continuation**
+  - Conducting experiments  
 
 <script>
 function toggleAbstract(id) {
