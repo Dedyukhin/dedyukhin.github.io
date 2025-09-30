@@ -44,7 +44,7 @@ permalink: /research/
   <div class="pub-header">
     <span class="pub-title"><strong>When Cooperation Drives Continuation</strong></span>
     <div class="button-group">
-      <a class="mini-btn" onclick="toggleAbstract('abstract_WCDC')">View abstract</a>
+      <a class="mini-btn" onclick="toggleAbstract('abstract_WCDC')">Abstract</a>
     </div>
   </div>
 
