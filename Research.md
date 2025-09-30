@@ -12,11 +12,7 @@ permalink: /research/
     <div class="publication-info">International Journal of Public Administration</div>
     <div class="author-names">With Andrey Yushkov and Michael Alexeev</div>
     <div class="button-group">
-      <button class="abstract-button" onclick="toggleAbstract('abstract_local_fiscal_health')">View abstract</button>
-      <!-- Example extra buttons kept close; add/remove as needed -->
-      <a class="mini-btn" href="https://www.tandfonline.com/doi/pdf/10.1080/01900692.2024.2399133" target="_blank" rel="noopener">PDF</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Data</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Slides</a>
+      <a class="mini-btn" onclick="toggleAbstract('abstract_local_fiscal_health')">View abstract</a>
     </div>
   </div>
 
