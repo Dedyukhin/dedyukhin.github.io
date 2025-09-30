@@ -12,13 +12,9 @@ permalink: /teaching/
     <div class="publication-info">Indiana University Bloomington</div>
 
     <div class="button-group">
-      <a class="mini-btn" aria-expanded="false" aria-controls="B251" onclick="toggleAbstract('B251', this)">Details</button>
+      <a class="mini-btn" aria-expanded="false" aria-controls="B251" onclick="toggleAbstract('B251', this)">Details</a>
       <!-- Add/Remove adjacent buttons as needed -->
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Syllabus</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Schedule</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Slides</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Assignments</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Evaluations</a>
+      <a class="mini-btn" href="/files/Syllabus SP24-B251-9998.pdf" target="_blank" rel="noopener">Syllabus</a>
     </div>
   </div>
 
