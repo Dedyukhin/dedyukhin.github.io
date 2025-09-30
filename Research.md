@@ -125,9 +125,13 @@ function toggleAbstract(id) {
 
 /* Abstract sits inside the same box */
 .abstract-container{
-  display: none;
+  overflow: hidden;
+  max-height: 0;          /* closed state */
+  opacity: 0;
+  transition: max-height 320ms ease, opacity 220ms ease;
   border-top: 1px dashed #e5e7eb;
   margin-top: 10px;
   padding-top: 10px;
 }
+
 </style>
