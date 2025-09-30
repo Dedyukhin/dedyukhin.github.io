@@ -6,11 +6,11 @@ permalink: /research/
 
 Publications
 ---
-- **[Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?](https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133)**  
-<div class="publication-info">International Journal of Public Administration</div>  
-<div class="author-names">With Andrey Yushkov and Michael Alexeev</div>  
-<button class="abstract-button" onclick="toggleAbstract('abstract_local_fiscal_health')">View Abstract</button>
-<div id="abstract_local_fiscal_health" class="abstract-container"> This article is the first attempt to systematically study local public finance in contemporary Russia. We document that local governments do not have sufficient own-source revenues, are increasingly more dependent on intergovernmental fiscal aid, lack access to market borrowing, and suffer from structural flaws in the design of intergovernmental fiscal relations. Additionally, we present the results of the modified Brown’s 10-point test to compare local fiscal health across the Russian regions. Finally, we assess the strength of local fiscal incentives in 2012–2021 and demonstrate that local governments in Russia lack capacity to foster local economic growth through the tax code. </div>
+- **[Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?](https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133)**
+  <div class="publication-info">International Journal of Public Administration</div>  
+  <div class="author-names">With Andrey Yushkov and Michael Alexeev</div>  
+  <button class="abstract-button" onclick="toggleAbstract('abstract_local_fiscal_health')">View Abstract</button> 
+  <div id="abstract_local_fiscal_health" class="abstract-container"> This article is the first attempt to systematically study local public   finance in contemporary Russia. We document that local governments do not have sufficient own-source revenues, are increasingly more dependent on intergovernmental fiscal aid, lack access to market borrowing, and suffer from structural flaws in the design of intergovernmental fiscal relations. Additionally, we present the results of the modified Brown’s 10-point test to compare local fiscal health across the Russian regions. Finally, we assess the strength of local fiscal incentives in 2012–2021 and demonstrate that local governments in Russia lack capacity to foster local economic growth through the tax code. </div>
 
 Working papers
 ---
