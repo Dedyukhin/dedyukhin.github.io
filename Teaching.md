@@ -8,9 +8,7 @@ permalink: /teaching/
 
 <div class="pub-card">
   <div class="pub-header">
-    <a class="pub-title">
-      <strong>Fundamentals Of Economics For Business I</strong>
-    </a>
+    <span class="pub-title"><strong>When Cooperation Drives Continuation</strong></span>
     <div class="publication-info">Undergraduate course</div>
 
     <div class="button-group">
