@@ -9,10 +9,10 @@ permalink: /teaching/
 <div class="pub-card">
   <div class="pub-header">
     <span class="pub-title"><strong>Fundamentals Of Economics For Business I</strong></span>
-    <div class="publication-info">Undergraduate course</div>
+    <div class="publication-info">Indiana University Bloomington</div>
 
     <div class="button-group">
-      <button class="abstract-button" aria-expanded="false" aria-controls="course_foebi" onclick="toggleAbstract('course_foebi', this)">View details</button>
+      <a class="mini-btn" aria-expanded="false" aria-controls="B251" onclick="toggleAbstract('B251', this)">Details</button>
       <!-- Add/Remove adjacent buttons as needed -->
       <a class="mini-btn" href="#" target="_blank" rel="noopener">Syllabus</a>
       <a class="mini-btn" href="#" target="_blank" rel="noopener">Schedule</a>
@@ -22,10 +22,10 @@ permalink: /teaching/
     </div>
   </div>
 
-  <div id="course_foebi" class="abstract-container" hidden>
-    <p><strong>Offerings:</strong> Fall 2023; Spring 2024; Fall 2024; Spring 2025; Fall 2025.</p>
+  <div id="B251" class="abstract-container" hidden>
+    <p> Fall 2023; Spring 2024; Fall 2024; Spring 2025; Fall 2025.</p>
     <!-- Optional short description; edit or remove -->
-    <p>This course introduces core microeconomic tools for business decision-making: supply &amp; demand, elasticities, consumer/producer surplus, market efficiency, and market failures with business applications.</p>
+    <p>The first course in a two-course sequence that introduces business students to essential economic concepts. Examines the economic notions of cost and gains from trade, determinants of economic growth, consumer and firm behavior in competitive and non-competitive environments, the effects of taxation, externalities, moral hazard, and adverse selection, and basic game theory.</p>
   </div>
 </div>
 
