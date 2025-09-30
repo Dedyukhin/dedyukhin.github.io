@@ -12,7 +12,7 @@ permalink: /research/
     <div class="publication-info">International Journal of Public Administration</div>
     <div class="author-names">With Andrey Yushkov and Michael Alexeev</div>
     <div class="button-group">
-      <a class="mini-btn" onclick="toggleAbstract('abstract_local_fiscal_health')">View abstract</a>
+      <a class="mini-btn" onclick="toggleAbstract('abstract_local_fiscal_health')">Abstract</a>
     </div>
   </div>
 
@@ -29,9 +29,7 @@ permalink: /research/
     <div class="publication-info">SSRN Working Paper</div>
     <div class="author-names">With Michael Alexeev and Leonid Polishchuk</div>
     <div class="button-group">
-      <button class="abstract-button" onclick="toggleAbstract('abstract_nursing_homes')">View abstract</button>
-      <a class="mini-btn" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4906864" target="_blank" rel="noopener">SSRN</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Slides</a>
+      <a class="mini-btn" onclick="toggleAbstract('abstract_nursing_homes')">Abstract</a>
     </div>
   </div>
 
@@ -46,9 +44,7 @@ permalink: /research/
   <div class="pub-header">
     <span class="pub-title"><strong>When Cooperation Drives Continuation</strong></span>
     <div class="button-group">
-      <button class="abstract-button" onclick="toggleAbstract('abstract_WCDC')">View abstract</button>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Design</a>
-      <a class="mini-btn" href="#" target="_blank" rel="noopener">Slides</a>
+      <a class="mini-btn" onclick="toggleAbstract('abstract_WCDC')">View abstract</a>
     </div>
   </div>
 
