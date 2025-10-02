@@ -1,10 +1,10 @@
 <div style="display: flex; flex-wrap: wrap; align-items: center; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fdfdfd; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
     <div style="flex: 1; min-width: 250px; padding-right: 20px;">
         <p style="margin-bottom: 12px;">
-            I am a fourth-year Ph.D. student in Economics at <strong>Indiana University Bloomington</strong>.
+            I am a fourth-year PhD student in Economics at Indiana University Bloomington.
         </p>
         <p style="margin-bottom: 12px;">
-            My research focuses on <strong>experimental economics</strong>, <strong>game theory</strong>, and <strong>repeated games</strong>.
+            My research focuses on experimental and behaviroal economics, and game theory.
         </p>
 
         <p style="margin-bottom: 12px;">
