@@ -4,7 +4,7 @@
             I am a fourth-year PhD student in Economics at Indiana University Bloomington.
         </p>
         <p style="margin-bottom: 12px;">
-            My research focuses on experimental and behaviroal economics, and game theory.
+            My research focuses on experimental and behavioral economics, and game theory.
         </p>
 
         <p style="margin-bottom: 12px;">
@@ -19,7 +19,7 @@
         </p>
     </div>
     <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
-        <img src="images/Career photo.JPG" alt="Professional portrait" style="width: 100%; max-width: 200px; height: auto; border: 3px solid #990000; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+        <img src="images/Career photo.JPG" alt="Professional portrait" style="width: 100%; max-width: 300px; height: auto; border: 3px solid #990000; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
     </div>
 </div>
 
