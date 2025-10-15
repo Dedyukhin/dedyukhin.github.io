@@ -19,7 +19,7 @@
         </p>
     </div>
     <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
-        <img src="images/Career photo.JPG" alt="Professional portrait" style="width: 100%; max-width: 300px; height: auto; border: 3px solid #990000; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+        <img src="images/20250817_014118-9340.jpg" alt="Professional portrait" style="width: 100%; max-width: 300px; height: auto; border: 3px solid #990000; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
     </div>
 </div>
 
