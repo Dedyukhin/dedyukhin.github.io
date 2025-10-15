@@ -15,7 +15,7 @@
         </p>
         
         <p style="margin-bottom: 0;">
-            <strong>Email:</strong> <a href="mailto:ivan.dedyukh@gmail.com" style="color: #990000; text-decoration: none; font-weight: bold;">idedyukh@iu.edu</a>
+            <strong>Email:</strong> <a href="mailto:ivan.dedyukh@gmail.com" style="color: #990000; text-decoration: none; font-weight: bold;">ivan.dedyukh@gmail.com</a>
         </p>
     </div>
     <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
