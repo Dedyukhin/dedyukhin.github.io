@@ -158,12 +158,12 @@ nav h2 a:hover {
 }
 
 .profile-text {
-    width: 100%;
+    width: 120%;
     text-align: left;
 }
 
 .profile-text p {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .profile-text p:last-child {
@@ -171,13 +171,13 @@ nav h2 a:hover {
 }
 
 .profile-text strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .profile-text a {
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .profile-text a:hover {
