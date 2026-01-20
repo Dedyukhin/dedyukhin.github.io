@@ -1,5 +1,5 @@
 <h1 class="research-tagline">Ivan Dedyukhin</h1>
-<p class="research-subtitle">Experimental Economist | Game Theory | Behavioral Economics</p>
+<p class="research-subtitle">Experimental Economics | Game Theory | Behavioral Economics</p>
 
 <div class="profile-container">
     <div class="profile-image-wrapper">
