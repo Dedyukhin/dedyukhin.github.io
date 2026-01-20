@@ -8,20 +8,22 @@
 
     <div class="profile-text">
         <p>
-            I am a fourth-year PhD student in Economics at Indiana University Bloomington. My research focuses on experimental and behavioral economics, with particular emphasis on game theory applications.
+            I am a fourth-year PhD student in Economics at Indiana University Bloomington.
         </p>
 
         <p>
-            <strong>Research Interests:</strong> Experimental Economics, Behavioral Economics, Game Theory, Decision Making Under Uncertainty
+            <strong>Research Interests:</strong> Experimental Economics, Game Theory, Behavioral Economics
         </p>
 
         <p>
-            <strong>Current Research:</strong> Investigating the effects of nursing home regulation on quality of care through experimental methods and field data analysis, with co-authors from IU and UCSD.
+            <strong>Current Research:</strong> Investigating the effects of cooperation-dependent continuation in indefinitely repeated prisoners' dillemas and difference in strategic perception of AI between generations.
         </p>
 
-        <p>
-            <strong>News:</strong> Presented at COMP 2024 Conference • New working paper on nursing home regulation (August 2024) • Published in International Journal of Public Administration
-        </p>
+        <p><strong>News:</strong></p>
+            <ul>
+                <li>Presented at ESA 2025 Conference at Tucson</li>
+                <li>Organized the 3rd Midwest Experimental Economics Meeting for Graduate Students</li>
+            </ul>
 
         <p>
             <strong>Email:</strong> <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a><br>
