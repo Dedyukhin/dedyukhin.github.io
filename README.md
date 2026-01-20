@@ -21,7 +21,7 @@
 
         <p><strong>News:</strong></p>
             <ul>
-                <li>Presented at ESA 2025 Conference at Tucson</li>
+                <li>Presented at ESA 2025 Conference in Tucson</li>
                 <li>Organized the 3rd Midwest Experimental Economics Meeting for Graduate Students</li>
             </ul>
 
