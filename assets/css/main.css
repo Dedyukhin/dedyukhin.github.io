@@ -156,8 +156,8 @@ nav h2 a:hover {
 }
 
 .profile-text {
-    width: 95%;
-    text-align: left;
+    flex: 1;
+    min-width: 0;
 }
 
 .profile-text p {
