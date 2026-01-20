@@ -1,0 +1,42 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+.vercel
+
+# Secrets (DO NOT COMMIT)
+.env.local
+secrets.yml
+*.pem
+*.key
+
+# Temporary files
+*.log
+*.tmp

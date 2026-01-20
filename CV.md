@@ -4,8 +4,11 @@ title: CV
 permalink: /CV/
 ---
 
-### CV
-<iframe src="/files/Academic_CV.pdf" width="100%" height="600px">
-    This browser does not support PDF. Please download the PDF to view it: <a href="/files/Syllabus SP24-B251-9998.pdf">Download PDF</a>.
-</iframe>
+## Curriculum Vitae
 
+<div class="pdf-download-section">
+    <p>Download my academic CV to learn more about my education, research, and professional experience.</p>
+    <a href="/files/Academic_CV.pdf" target="_blank" class="pdf-download-btn">
+        📄 View CV (PDF)
+    </a>
+</div>

@@ -1,0 +1,51 @@
+name: Index Content for AI Assistant
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+      - 'files/**.pdf'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  index:
+    name: Index website content
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run indexing script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_ENVIRONMENT: ${{ secrets.PINECONE_ENVIRONMENT }}
+          PINECONE_INDEX_NAME: ${{ secrets.PINECONE_INDEX_NAME }}
+        run: |
+          python scripts/index_content.py
+
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "✅ Content indexing completed successfully!"
+          echo "Total files indexed: Markdown + PDF files"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Content indexing failed. Check logs for details."
+          exit 1
