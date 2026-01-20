@@ -171,13 +171,13 @@ nav h2 a:hover {
 }
 
 .profile-text strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .profile-text a {
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .profile-text a:hover {
