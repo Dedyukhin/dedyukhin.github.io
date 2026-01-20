@@ -16,6 +16,14 @@
         </p>
 
         <p>
+            <strong>Current Research:</strong> Investigating the effects of nursing home regulation on quality of care through experimental methods and field data analysis, with co-authors from IU and UCSD.
+        </p>
+
+        <p>
+            <strong>News:</strong> Presented at COMP 2024 Conference • New working paper on nursing home regulation (August 2024) • Published in International Journal of Public Administration
+        </p>
+
+        <p>
             <strong>Email:</strong> <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a><br>
             <strong>Office:</strong> Wylie Hall, Indiana University, Bloomington, IN 47405
         </p>
