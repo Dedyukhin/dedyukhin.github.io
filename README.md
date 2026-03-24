@@ -3,7 +3,7 @@
 
 <div class="profile-container">
     <div class="profile-image-wrapper">
-        <img src="images/20250817_014118-9340.jpg" alt="Ivan Dedyukhin - Professional portrait" class="profile-image">
+        <img src="images/20250817_014118-9340.jpg" alt="Ivan Dedyukhin" class="profile-image">
     </div>
 
     <div class="profile-text">
@@ -15,6 +15,7 @@
             <strong>Research Interests:</strong> Experimental Economics, Game Theory, Behavioral Economics
         </p>
 
+        <p class="profile-section-label">Current Research</p>
         <p>
             <strong>Current Research:</strong> Investigating the effects of cooperation-dependent continuation in indefinitely repeated prisoners' dillemas and difference in strategic perception of AI between generations.
         </p>
@@ -25,9 +26,10 @@
                 <li>Organized the 3rd Midwest Experimental Economics Meeting for Graduate Students</li>
             </ul>
 
-        <p>
-            <strong>Email:</strong> <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a><br>
-            <strong>Office:</strong> Wylie Hall, Indiana University, Bloomington, IN 47405
-        </p>
+        <div class="profile-contact">
+            <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a>
+            <span class="profile-contact-sep">·</span>
+            <span>Wylie Hall, Indiana University, Bloomington IN 47405</span>
+        </div>
     </div>
 </div>
