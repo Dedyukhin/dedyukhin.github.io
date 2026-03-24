@@ -8,7 +8,7 @@
 
     <div class="profile-text">
         <p>
-            I am a fourth-year PhD student in Economics at Indiana University Bloomington.
+            I am a PhD candidate in Economics at Indiana University Bloomington.
         </p>
 
         <p>
@@ -17,7 +17,7 @@
 
         <p class="profile-section-label">Current Research</p>
         <p>
-            <strong>Current Research:</strong> Investigating the effects of cooperation-dependent continuation in indefinitely repeated prisoners' dillemas and difference in strategic perception of AI between generations.
+            Investigating the cooperation-dependent continuation in indefinitely repeated prisoners' dillemas, information structures in global games, and strategic perception of AI.
         </p>
 
         <p><strong>News:</strong></p>
