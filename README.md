@@ -1,3 +1,9 @@
+---
+layout: default
+title: Ivan Dedyukhin - Economist
+permalink: /
+---
+
 <h1 class="research-tagline">Ivan Dedyukhin</h1>
 <p class="research-subtitle">Experimental Economics | Game Theory | Behavioral Economics</p>
 
