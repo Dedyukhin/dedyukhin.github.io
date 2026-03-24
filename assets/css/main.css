@@ -434,17 +434,46 @@ h3 {
 /* ==========================================
    Responsive Design
    ========================================== */
+
+/* Tablet & Large Mobile (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 18px;
+    }
+
+    .profile-container {
+        padding: 28px 22px;
+        gap: 28px;
+    }
+
+    .profile-image-wrapper {
+        width: 260px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Mobile Landscape & Medium Mobile (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Navigation */
     nav {
         flex-direction: column;
         align-items: center;
-        padding: 12px 15px;
+        padding: 14px 16px;
+        gap: 12px;
     }
 
     nav h2 {
         text-align: center;
-        margin-bottom: 12px;
-        font-size: 1.4em;
+        margin-bottom: 0;
+        font-size: 1.5em;
     }
 
     .horizontal-nav {
@@ -459,53 +488,249 @@ h3 {
 
     .horizontal-nav a {
         font-size: 0.95em;
-        padding: 7px 14px;
+        padding: 8px 14px;
     }
 
+    /* Container */
     .container {
-        padding: 15px;
+        padding: 16px;
     }
 
+    /* Profile Section */
     .profile-container {
         flex-direction: column;
         align-items: center;
-        padding: 24px 18px;
-        gap: 20px;
+        padding: 24px 20px;
+        gap: 24px;
+        font-size: 15px;
     }
 
     .profile-image-wrapper {
         width: 100%;
-        max-width: 340px;
+        max-width: 320px;
+    }
+
+    .profile-text p {
+        margin: 0 0 12px 0;
     }
 
     .profile-contact {
         flex-direction: column;
-        gap: 4px;
+        gap: 6px;
+        align-items: flex-start;
     }
 
     .profile-contact-sep {
         display: none;
     }
 
+    /* Typography */
     .research-tagline {
-        font-size: 1.8em;
+        font-size: 1.9em;
+        margin-bottom: 10px;
     }
 
     .research-subtitle {
-        font-size: 1.15em;
+        font-size: 1.1em;
+        margin-bottom: 24px;
     }
-}
 
-@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
 
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    /* Publication Cards */
+    .pub-card {
+        padding: 16px 14px;
+        margin: 12px 0;
+    }
+
+    .pub-title {
+        font-size: 1.02em;
+        line-height: 1.4;
+    }
+
+    .button-group {
+        margin-top: 8px;
+    }
+
+    .mini-btn {
+        font-size: 13px;
+        padding: 5px 11px;
+    }
+
+    /* PDF Download */
+    .pdf-download-section {
+        padding: 24px 16px;
+    }
+
+    .pdf-download-btn {
+        padding: 11px 22px;
+        font-size: 0.98em;
+    }
+
+    /* Social Links */
     .social-links {
-        flex-direction: column;
-        align-items: center;
+        margin: 24px auto;
+        gap: 12px;
     }
 
     .social-links a {
-        width: 200px;
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* Mobile Portrait (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Navigation */
+    nav {
+        padding: 12px 12px;
+    }
+
+    nav h2 {
+        font-size: 1.3em;
+    }
+
+    .horizontal-nav a {
+        font-size: 0.9em;
+        padding: 7px 12px;
+    }
+
+    /* Container */
+    .container {
+        padding: 12px;
+    }
+
+    /* Profile Section */
+    .profile-container {
+        padding: 20px 16px;
+        gap: 20px;
+        font-size: 14.5px;
+    }
+
+    .profile-image-wrapper {
+        max-width: 280px;
+    }
+
+    .profile-section-label {
+        font-size: 10.5px;
+        margin: 14px 0 4px 0 !important;
+    }
+
+    /* Typography */
+    .research-tagline {
+        font-size: 1.6em;
+        line-height: 1.2;
+    }
+
+    .research-subtitle {
+        font-size: 1.05em;
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.35em;
+    }
+
+    h3 {
+        font-size: 1.15em;
+    }
+
+    /* Publication Cards */
+    .pub-card {
+        padding: 14px 12px;
+        margin: 10px 0;
+    }
+
+    .pub-title {
+        font-size: 1em;
+    }
+
+    .publication-info,
+    .author-names {
+        font-size: 0.92em;
+    }
+
+    .abstract-container {
+        font-size: 0.95em;
+        line-height: 1.55;
+    }
+
+    /* PDF Download */
+    .pdf-download-section {
+        padding: 20px 14px;
+    }
+
+    .pdf-download-section p {
+        font-size: 1.05em;
+    }
+
+    .pdf-download-btn {
+        padding: 10px 20px;
+        font-size: 0.95em;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Social Links */
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    .social-links a {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
         text-align: center;
+    }
+}
+
+/* Very Small Screens (max-width: 360px) */
+@media (max-width: 360px) {
+    nav h2 {
+        font-size: 1.2em;
+    }
+
+    .horizontal-nav a {
+        font-size: 0.85em;
+        padding: 6px 10px;
+    }
+
+    .profile-container {
+        padding: 16px 12px;
+        font-size: 14px;
+    }
+
+    .research-tagline {
+        font-size: 1.5em;
+    }
+
+    .research-subtitle {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    .pub-card {
+        padding: 12px 10px;
     }
 }
 
