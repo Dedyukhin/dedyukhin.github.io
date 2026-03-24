@@ -1,5 +1,5 @@
 <h1 class="research-tagline">Ivan Dedyukhin</h1>
-<p class="research-subtitle">PhD Candidate in Economics · Indiana University Bloomington</p>
+<p class="research-subtitle">Experimental Economics | Game Theory | Behavioral Economics</p>
 
 <div class="profile-container">
     <div class="profile-image-wrapper">
@@ -9,25 +9,22 @@
     <div class="profile-text">
         <p>
             I am a fourth-year PhD student in Economics at Indiana University Bloomington.
-            My research focuses on experimental and behavioral economics and game theory.
         </p>
 
-        <p class="profile-section-label">Research Interests</p>
-        <p>Experimental Economics · Behavioral Economics · Game Theory · Decision Making</p>
+        <p>
+            <strong>Research Interests:</strong> Experimental Economics, Game Theory, Behavioral Economics
+        </p>
 
         <p class="profile-section-label">Current Research</p>
         <p>
-            Studying how endogenous continuation probabilities affect cooperation in repeated
-            games. Also working on the role of ownership structure and information asymmetry
-            in nursing home quality during the COVID-19 pandemic.
+            <strong>Current Research:</strong> Investigating the effects of cooperation-dependent continuation in indefinitely repeated prisoners' dillemas and difference in strategic perception of AI between generations.
         </p>
 
-        <p class="profile-section-label">Recent News</p>
-        <ul class="profile-news">
-            <li>Presented at COMP 2024 Conference</li>
-            <li>New working paper: <em>Ownership, Asymmetric Information, and Quality of Care</em> (Aug 2024)</li>
-            <li>Published in <em>International Journal of Public Administration</em> (2024)</li>
-        </ul>
+        <p><strong>News:</strong></p>
+            <ul>
+                <li>Presented at ESA 2025 Conference in Tucson</li>
+                <li>Organized the 3rd Midwest Experimental Economics Meeting for Graduate Students</li>
+            </ul>
 
         <div class="profile-contact">
             <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a>
