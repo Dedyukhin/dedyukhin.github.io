@@ -53,3 +53,17 @@ permalink: /research/
   </div>
 </div>
 
+<div class="pub-card">
+  <div class="pub-header">
+    <span class="pub-title"><strong>Human Expertise in the Age of AI</strong></span>
+    <div class="author-names">With Ala Avoyan</div>
+    <div class="button-group">
+      <a class="mini-btn" onclick="toggleAbstract('abstract_AI')">Abstract</a>
+    </div>
+  </div>
+
+  <div id="abstract_AI" class="abstract-container">
+    This study examines whether people believe AI chatbot assistance can substitute for strategic expertise and how these perceptions vary across generations. Using the 11-20 money request game, we measure how participants adjust their strategic sophistication when facing opponents of varying skill levels with or without AI assistance. Our findings suggest that generational differences may play a crucial role in shaping these responses. Older generations appear to respond differently to AI-assisted opponents compared to younger cohorts. We also explore whether participants perceive AI assistance as comparable to human expertise and find early evidence that AI may act as a complement to human expertise, prompting participants to think more deeply. 
+  </div>
+</div>
+
