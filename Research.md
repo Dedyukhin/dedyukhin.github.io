@@ -49,7 +49,7 @@ permalink: /research/
   </div>
 
   <div id="abstract_WCDC" class="abstract-container">
-    This paper introduces a novel variant of the Indefinitely Repeated Prisoner’s Dilemma in which the probability of game continuation is endogenously determined by players’ actions. Theoretical analysis demonstrates that the cooperation reward and the probability of continuation following mutual cooperation function as substitutes when cooperation can be sustained as equilibrium - different combinations of these parameters can yield the same expected value from cooperation. To test the behavioral relevance of these dynamics, I conduct a laboratory experiment that varies both the reward from mutual cooperation and the continuation probability but only following mutual cooperation. The experimental results suggest that while both mechanisms promote cooperation, increasing the reward is likely a more effective lever than conditioning future interaction on mutual cooperation.
+    This paper introduces a novel variant of the indefinitely repeated prisoner's dilemma in which the continuation probability depends on the number of cooperating players. Theoretical analysis demonstrates that the cooperation reward and the probability of continuation following mutual cooperation function as substitutes when cooperation can be sustained as equilibrium. To test the behavioral relevance of these dynamics, I conduct a laboratory experiment that varies both the reward from mutual cooperation and the continuation probability but only following mutual cooperation. Overall, the findings suggest that continuation incentives can help sustain cooperation and may, in some settings, substitute for stronger direct payoff incentives.
   </div>
 </div>
 
