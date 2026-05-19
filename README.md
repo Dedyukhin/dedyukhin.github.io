@@ -23,8 +23,7 @@ permalink: /
 
         <p class="profile-section-label">Current Research</p>
         <p>
-            Investigating the cooperation-dependent continuation in indefinitely repeated prisoners' dillemas, information structures in global games, and strategic perception of AI.
-        </p>
+           I study how people sustain cooperation under strategic uncertainty, focusing on how cooperation can be sustained when present actions influence the likelihood of future interactions. My research also examines whether people perceive AI assistance as a substitute for strategic expertise, and how these perceptions differ across generations.  </p>
 
         <!-- <p><strong>News:</strong></p>
             <ul>
