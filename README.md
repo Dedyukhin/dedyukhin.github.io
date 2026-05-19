@@ -26,11 +26,12 @@ permalink: /
             Investigating the cooperation-dependent continuation in indefinitely repeated prisoners' dillemas, information structures in global games, and strategic perception of AI.
         </p>
 
-        <p><strong>News:</strong></p>
+        <!-- <p><strong>News:</strong></p>
             <ul>
                 <li>Presented at ESA 2025 Conference in Tucson</li>
                 <li>Organized the 3rd Midwest Experimental Economics Meeting for Graduate Students</li>
             </ul>
+             -->
 
         <div class="profile-contact">
             <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a>
