@@ -10,7 +10,7 @@ permalink: /
 <div class="profile-container">
     <div class="profile-image-wrapper">
         <img src="images/profile-photo-2.png" alt="Ivan Dedyukhin" class="profile-image">
-        <div class="photo-caption">Ivan Dedyukhin</div>
+        <!-- <div class="photo-caption">Ivan Dedyukhin</div> -->
     </div>
 
     <div class="profile-text">
