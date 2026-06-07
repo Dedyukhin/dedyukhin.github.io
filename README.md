@@ -20,6 +20,10 @@ permalink: /
         <p>
             <strong>Research Interests:</strong> Experimental Economics, Game Theory, Behavioral Economics
         </p>
+        <ul>
+            <li>Presented at ESA 2025 Conference in Tucson</li>
+            <li>Organized the 3rd Midwest Experimental Economics Meeting for Graduate Students</li>
+        </ul>
 
         <p class="profile-section-label">Current Research</p>
         <p>
