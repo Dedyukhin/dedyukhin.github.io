@@ -66,6 +66,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 90px;
     border-bottom: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -75,6 +76,7 @@ nav h2 {
     font-size: 1.6em;
     font-weight: 500;
     letter-spacing: -0.02em;
+    border-bottom: none;
 }
 
 nav h2 a {
@@ -143,6 +145,10 @@ nav h2 a:hover {
 .profile-image-wrapper {
     flex-shrink: 0;
     width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .profile-image {
@@ -151,6 +157,23 @@ nav h2 a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.13);
     display: block;
+}
+
+.photo-caption {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.inline-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.inline-link:hover {
+    border-bottom-color: var(--text-color);
 }
 
 /* Text — flexible right column */
@@ -317,6 +340,12 @@ nav h2 a:hover {
 .author-names {
     font-weight: 600;
     font-size: 0.95em;
+}
+
+.pub-meta {
+    font-size: 0.93em;
+    color: #555;
+    margin-top: 2px;
 }
 
 .button-group {
