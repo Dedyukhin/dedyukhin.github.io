@@ -24,11 +24,11 @@ permalink: /
         </p>
 
         <div class="profile-contact">
-            <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a>
+            <a href="/CV/">CV</a> <br>
+            <a href="mailto:idedyukh@iu.edu">idedyukh@iu.edu</a><br>
             <span class="profile-contact-sep">·</span>
             <span>Wylie Hall, Indiana University, Bloomington IN 47405</span>
             <span class="profile-contact-sep">·</span>
-            <a href="/CV/">CV</a>
         </div>
     </div>
 </div>
