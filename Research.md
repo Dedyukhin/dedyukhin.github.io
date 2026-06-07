@@ -9,8 +9,7 @@ permalink: /research/
 <div class="pub-card">
   <div class="pub-header">
     <a class="pub-title" href="https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133"><strong>Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?</strong></a>
-    <div class="publication-info">International Journal of Public Administration, 1–15, 2024</div>
-    <div class="author-names">With Andrey Yushkov and Michael Alexeev</div>
+    <div class="pub-meta"><em>International Journal of Public Administration</em>, 1–15, 2024 &nbsp;·&nbsp; with Andrey Yushkov and Michael Alexeev</div>
     <div class="button-group">
       <a class="mini-btn" onclick="toggleAbstract('abstract_local_fiscal_health')">Abstract</a>
     </div>
@@ -26,8 +25,7 @@ permalink: /research/
 <div class="pub-card">
   <div class="pub-header">
     <a class="pub-title" href="https://ssrn.com/abstract=4906864"><strong>Ownership, Asymmetric Information, and Quality of Care for the Elderly: Evidence From US Nursing Homes During the COVID-19 Pandemic</strong></a>
-    <div class="publication-info">SSRN Working Paper</div>
-    <div class="author-names">With Michael Alexeev and Leonid Polishchuk</div>
+    <div class="pub-meta"><em>SSRN Working Paper</em> &nbsp;·&nbsp; with Michael Alexeev and Leonid Polishchuk</div>
     <div class="button-group">
       <a class="mini-btn" onclick="toggleAbstract('abstract_nursing_homes')">Abstract</a>
     </div>
@@ -56,7 +54,7 @@ permalink: /research/
 <div class="pub-card">
   <div class="pub-header">
     <span class="pub-title"><strong>Human Expertise in the Age of AI</strong></span>
-    <div class="author-names">With Ala Avoyan</div>
+    <div class="pub-meta">with Ala Avoyan</div>
     <div class="button-group">
       <a class="mini-btn" onclick="toggleAbstract('abstract_AI')">Abstract</a>
     </div>
