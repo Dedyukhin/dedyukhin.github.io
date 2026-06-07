@@ -49,7 +49,21 @@ permalink: /research/
   </div>
 
   <div id="abstract_WCDC" class="abstract-container">
-    This paper introduces a novel variant of the Indefinitely Repeated Prisoner’s Dilemma in which the probability of game continuation is endogenously determined by players’ actions. Theoretical analysis demonstrates that the cooperation reward and the probability of continuation following mutual cooperation function as substitutes when cooperation can be sustained as equilibrium - different combinations of these parameters can yield the same expected value from cooperation. To test the behavioral relevance of these dynamics, I conduct a laboratory experiment that varies both the reward from mutual cooperation and the continuation probability but only following mutual cooperation. The experimental results suggest that while both mechanisms promote cooperation, increasing the reward is likely a more effective lever than conditioning future interaction on mutual cooperation.
+    I introduce an indefinitely repeated prisoner's dilemma in which the continuation probability depends on the number of cooperating players: mutual cooperation makes future interaction more likely. Theoretically, the cooperation reward and the post-cooperation continuation probability function as substitutes in sustaining cooperative equilibria. I test this in a laboratory experiment using a 2x2 between-subjects design that independently varies the reward from mutual cooperation and the continuation probability following mutual cooperation. Three main results emerge. First, cooperation increases when a higher continuation probability makes cooperative play supportable as an equilibrium, but not when cooperation is already supportable. Second, early in the experiment, higher payoff rewards have a stronger effect on cooperation than higher continuation probabilities; this asymmetry disappears with experience. Third, strategy estimation reveals substitutability between payoff and continuation incentives at matched levels of strategic uncertainty.
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-header">
+    <span class="pub-title"><strong>Human Expertise in the Age of AI</strong></span>
+    <div class="author-names">With Ala Avoyan</div>
+    <div class="button-group">
+      <a class="mini-btn" onclick="toggleAbstract('abstract_AI')">Abstract</a>
+    </div>
+  </div>
+
+  <div id="abstract_AI" class="abstract-container">
+    This study examines whether people believe AI chatbot assistance can substitute for strategic expertise and how these perceptions vary across generations. Using the 11-20 money request game, we measure how participants adjust their strategic sophistication when facing opponents of varying skill levels with or without AI assistance. Our findings suggest that generational differences may play a crucial role in shaping these responses. Older generations appear to respond differently to AI-assisted opponents compared to younger cohorts. We also explore whether participants perceive AI assistance as comparable to human expertise and find early evidence that AI may act as a complement to human expertise, prompting participants to think more deeply. 
   </div>
 </div>
 

@@ -6,19 +6,19 @@ plugins_dir         : _plugins # takes an array of strings and loads plugins in 
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
-sass:
-  sass_dir: _sass
+# sass:
+#   sass_dir: _sass  # Not needed - using assets/css/main.css
 collections:
   posts:
     output          : true
 
 #Theme
-remote_theme: pages-themes/slate@v0.2.0
+# remote_theme: pages-themes/slate@v0.2.0  # Disabled - using custom layout
 
 # Handling Reading
 safe                : false
 include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts/", "api/", "vercel.json", "DEPLOYMENT.md", "AI_ASSISTANT_README.md", ".gitignore", ".github/"]
 keep_files          : [".git", ".svn"]
 encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
