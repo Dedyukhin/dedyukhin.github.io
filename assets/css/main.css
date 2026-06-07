@@ -1,11 +1,16 @@
 /* ==========================================
+   Google Fonts
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap');
+
+/* ==========================================
    CSS Variables for Consistent Theming
    ========================================== */
 :root {
     --primary-color: #990000;
     --primary-hover: #d4a5a5;
     --text-color: #333;
-    --bg-color: #f5f5f5;
+    --bg-color: #f8f6f2;
     --card-bg: #fafafa;
     --border-color: #e5e7eb;
     --white: #fff;
@@ -14,7 +19,7 @@
     --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.15);
 
     /* Typography */
-    --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-system: 'Crimson Pro', Georgia, serif;
     --font-size-base: 16px;
     --font-size-lg: 18px;
     --line-height-base: 1.6;
@@ -47,8 +52,6 @@ body {
     padding: 20px;
     max-width: 1000px;
     word-wrap: break-word;
-    background-color: var(--white);
-    box-shadow: var(--shadow-sm);
 }
 
 /* ==========================================
@@ -59,15 +62,16 @@ nav {
     color: var(--white);
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 50px;
     border-bottom: 2px solid #eaeaea;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h2 {
     margin: 0;
-    font-size: 2em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
@@ -86,10 +90,11 @@ nav h2 a:hover {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 35px;
 }
 
 .horizontal-nav li {
-    margin-left: 35px;
+    margin: 0;
 }
 
 .horizontal-nav a {
@@ -116,13 +121,11 @@ nav h2 a:hover {
 .profile-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    max-width: 800px;
+    align-items: flex-start;
+    max-width: 900px;
     margin: 0 auto;
     padding: 25px;
-    background-color: #fdfdfd;
-    border-radius: 10px;
-    box-shadow: var(--shadow-md);
+    gap: 40px;
     color: var(--text-color);
     line-height: var(--line-height-relaxed);
     font-size: var(--font-size-lg);
@@ -156,11 +159,22 @@ nav h2 a:hover {
     text-decoration: underline;
 }
 
+.inline-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.inline-link:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
 .profile-image-wrapper {
-    flex: 1;
-    min-width: 250px;
+    flex: 0 0 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 .profile-image {
@@ -170,6 +184,13 @@ nav h2 a:hover {
     border: 3px solid var(--primary-color);
     border-radius: 10px;
     box-shadow: var(--shadow-lg);
+}
+
+.photo-caption {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
 }
 
 .research-tagline {
@@ -221,16 +242,9 @@ nav h2 a:hover {
    Publication Cards (Research & Teaching)
    ========================================== */
 .pub-card {
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin: 14px 0 18px;
-    background: var(--card-bg);
-    transition: box-shadow 0.3s ease;
-}
-
-.pub-card:hover {
-    box-shadow: var(--shadow-sm);
+    padding: 12px 0;
+    margin: 16px 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .pub-header {
@@ -298,9 +312,7 @@ nav h2 a:hover {
    ========================================== */
 .pdf-download-section {
     text-align: center;
-    padding: 30px 20px;
-    background: var(--bg-color);
-    border-radius: 8px;
+    padding: 20px 0;
     margin: 20px 0;
 }
 
@@ -327,6 +339,13 @@ nav h2 a:hover {
     background: #770000;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 800px;
+    border: 1px solid var(--border-color);
+    margin-top: 20px;
 }
 
 /* ==========================================

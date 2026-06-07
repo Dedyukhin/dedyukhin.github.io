@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Teaching
+title: Teaching - Ivan Dedyukhin
 permalink: /teaching/
 ---
 
