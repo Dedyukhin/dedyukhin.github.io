@@ -18,9 +18,9 @@
 
     /* Typography - Modern, minimalistic font stack */
     --font-system: 'SimplePrintRegular', serif;
-    --font-size-base: 16px;
-    --font-size-lg: 20px;
-    --font-size-homepage: 21px;
+    --font-size-base: 20px;
+    --font-size-lg: 24px;
+    --font-size-homepage: 25px;
     --line-height-base: 1.6;
     --line-height-relaxed: 1.7;
 }
