@@ -4,6 +4,6 @@ title: CV - Ivan Dedyukhin
 permalink: /CV/
 ---
 
-## Academic Vitae
+## Curriculum Vitae
 
 <iframe src="/files/Academic_CV.pdf" class="pdf-viewer" title="Ivan Dedyukhin CV"></iframe>
