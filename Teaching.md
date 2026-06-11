@@ -4,7 +4,7 @@ title: Teaching - Ivan Dedyukhin
 permalink: /teaching/
 ---
 
-<p style="margin-bottom: 1.5em;">My courses require students to apply economic frameworks to novel problems rather than reproduce definitions. I design assessments around the distinction between pattern recognition and genuine reasoning — which demands more from students but produces more durable understanding.</p>
+<!-- <p style="margin-bottom: 1.5em;">My courses require students to apply economic frameworks to novel problems rather than reproduce definitions. I design assessments around the distinction between pattern recognition and genuine reasoning — which demands more from students but produces more durable understanding.</p> -->
 
 <h2>Undergraduate</h2>
 
