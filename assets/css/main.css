@@ -173,6 +173,7 @@ nav h2 a:hover {
 /* Text — flexible right column */
 .profile-text {
     flex: 1;
+    font-size: 1.2em;
     min-width: 0;
 }
 
