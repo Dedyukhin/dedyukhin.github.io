@@ -8,8 +8,8 @@ permalink: /research/
 
 <div class="pub-card">
   <div class="pub-header">
-    <a class="pub-title" href="https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133"><strong>Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?</strong></a>
-    <div class="pub-meta"><em>International Journal of Public Administration</em>, 1–15, 2024 &nbsp;·&nbsp; with Andrey Yushkov and Michael Alexeev</div>
+    <a class="pub-title" href="https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133"><strong>Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?</strong></a> (with Andrey Yushkov and Michael Alexeev)
+    <div class="pub-meta"><em>International Journal of Public Administration</em>, 1–15, 2024</div>
     <div class="button-group">
       <a class="mini-btn" onclick="toggleAbstract('abstract_local_fiscal_health')">Abstract</a>
     </div>
