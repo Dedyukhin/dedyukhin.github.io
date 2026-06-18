@@ -24,8 +24,8 @@ permalink: /research/
 
 <div class="pub-card">
   <div class="pub-header">
-    <a class="pub-title" href="https://ssrn.com/abstract=4906864"><strong>Ownership, Asymmetric Information, and Quality of Care for the Elderly: Evidence From US Nursing Homes During the COVID-19 Pandemic</strong></a>
-    <div class="pub-meta"><em>SSRN Working Paper</em> &nbsp;·&nbsp; with Michael Alexeev and Leonid Polishchuk</div>
+    <a class="pub-title" href="https://ssrn.com/abstract=4906864"><strong>Ownership, Asymmetric Information, and Quality of Care for the Elderly: Evidence From US Nursing Homes During the COVID-19 Pandemic</strong> (with Michael Alexeev and Leonid Polishchuk)</a>
+    <div class="pub-meta"><em>SSRN Working Paper</em></div>
     <div class="button-group">
       <a class="mini-btn" onclick="toggleAbstract('abstract_nursing_homes')">Abstract</a>
     </div>
@@ -53,8 +53,7 @@ permalink: /research/
 
 <div class="pub-card">
   <div class="pub-header">
-    <span class="pub-title"><strong>Human Expertise in the Age of AI</strong></span>
-    <div class="pub-meta">with Ala Avoyan</div>
+    <span class="pub-title"><strong>Human Expertise in the Age of AI</strong> (with Ala Avoyan) </span>
     <div class="button-group">
       <a class="mini-btn" onclick="toggleAbstract('abstract_AI')">Abstract</a>
     </div>
