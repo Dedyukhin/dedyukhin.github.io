@@ -1,0 +1,24 @@
+{%- assign nav = site.data.navigation -%}
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__identity" href="{{ "/" | relative_url }}">{{ nav.docs_list_title }}</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-list">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="nav-toggle__label">Menu</span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list" id="site-nav-list">
+        {%- for item in nav.docs -%}
+          {%- assign is_current = false -%}
+          {%- if page.url == item.url -%}{%- assign is_current = true -%}{%- endif -%}
+          <li class="site-nav__item">
+            <a class="site-nav__link{% if item.style == 'button' %} site-nav__link--button{% endif %}{% if is_current %} is-current{% endif %}"
+               href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

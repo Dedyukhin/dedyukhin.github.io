@@ -1,0 +1,153 @@
+# Research entries, rendered by _includes/research-entry.html on the homepage,
+# the Research page and the Job Market page.
+#
+# Fields
+#   id        unique slug, also used for the abstract panel element id
+#   title     paper title
+#   authors   coauthor line, e.g. "with Ala Avoyan" (omit for single-authored work)
+#   category  publication | working-paper | work-in-progress
+#   venue     journal or working-paper series
+#   year      year, only where confirmed
+#   detail    volume / page information, where available
+#   status    short status line
+#   summary   one or two sentence description
+#   abstract  full abstract
+#   featured  show in the "Selected research" block on the homepage
+#   links     list of { label, url, kind: pdf|external|internal }
+#
+# Every entry below is transcribed from material already in this repository
+# (the previous Research page and files/Academic_CV.pdf). Do not add links to
+# documents that do not exist.
+
+- id: when-cooperation-drives-continuation
+  title: When Cooperation Drives Continuation
+  category: work-in-progress
+  # TODO(update): change to "Job market paper — draft available <month year>" and add
+  # the paper/slides links below once the draft is ready to circulate.
+  status: Work in progress
+  summary: >-
+    An indefinitely repeated prisoner’s dilemma in which mutual cooperation makes
+    future interaction more likely. A 2×2 laboratory experiment tests whether the
+    reward from cooperating and the continuation probability that follows it act as
+    substitutes in sustaining cooperation.
+  abstract: >-
+    I introduce an indefinitely repeated prisoner’s dilemma in which the continuation
+    probability depends on the number of cooperating players: mutual cooperation makes
+    future interaction more likely. Theoretically, the cooperation reward and the
+    post-cooperation continuation probability function as substitutes in sustaining
+    cooperative equilibria. I test this in a laboratory experiment using a 2×2
+    between-subjects design that independently varies the reward from mutual cooperation
+    and the continuation probability following mutual cooperation. Three main results
+    emerge. First, cooperation increases when a higher continuation probability makes
+    cooperative play supportable as an equilibrium, but not when cooperation is already
+    supportable. Second, early in the experiment, higher payoff rewards have a stronger
+    effect on cooperation than higher continuation probabilities; this asymmetry
+    disappears with experience. Third, strategy estimation reveals substitutability
+    between payoff and continuation incentives at matched levels of strategic uncertainty.
+  # TODO(missing): no paper PDF, slides or replication package for this project exists
+  # in this repository. Add them to files/ and list them here, for example:
+  #   links:
+  #     - label: Paper
+  #       url: /files/<filename>.pdf
+  #       kind: pdf
+  links: []
+
+- id: human-expertise-age-of-ai
+  title: Human Expertise in the Age of AI
+  authors: with Ala Avoyan
+  category: work-in-progress
+  featured: true
+  summary: >-
+    Uses the 11-20 money request game to ask whether people treat AI chatbot assistance
+    as a substitute for strategic expertise, and how that judgement differs across
+    generations.
+  abstract: >-
+    This study examines whether people believe AI chatbot assistance can substitute for
+    strategic expertise and how these perceptions vary across generations. Using the
+    11-20 money request game, we measure how participants adjust their strategic
+    sophistication when facing opponents of varying skill levels with or without AI
+    assistance. Our findings suggest that generational differences may play a crucial
+    role in shaping these responses. Older generations appear to respond differently to
+    AI-assisted opponents compared to younger cohorts. We also explore whether
+    participants perceive AI assistance as comparable to human expertise and find early
+    evidence that AI may act as a complement to human expertise, prompting participants
+    to think more deeply.
+  links: []
+
+- id: signal-structure-regime-change
+  title: Signal Structure and Free-Riding in Regime Change
+  category: work-in-progress
+  # TODO(missing): no abstract or summary for this project exists in the repository.
+  # Add a `summary:` (one or two sentences) when available.
+  links: []
+
+- id: nursing-homes-ownership
+  title: >-
+    Ownership, Asymmetric Information, and Quality of Care for the Elderly:
+    Evidence From US Nursing Homes During the COVID-19 Pandemic
+  authors: with Michael Alexeev and Leonid Polishchuk
+  category: working-paper
+  venue: SSRN Working Paper
+  year: 2024
+  status: SSRN working paper, August 2024
+  featured: true
+  summary: >-
+    Theory and evidence on how greater observability of quality narrows the care gap
+    between nonprofit and for-profit providers, using US nursing homes during the
+    COVID-19 pandemic as a natural test.
+  abstract: >-
+    A common cause of market failures is asymmetric information. For this reason, the
+    reliance on market incentives and signals requires that quality of goods and services
+    is properly observable and verifiable. This requirement is hard to meet in the case of
+    credence goods, including most social services. In such environment, nonprofit
+    providers can offer additional quality assurance compared to for-profit entities. When
+    quality becomes better observable and verifiable, and hence could earn a market
+    premium, market incentives are closer aligned with social welfare, and the quality gap
+    expected between nonprofit and for-profit provision is likely to narrow. We explore
+    this conjecture theoretically and empirically, using in the empirical part the case of
+    US nursing homes during the COVID-19 pandemic. The pandemic supplied new tangible and
+    publicly observable nursing home performance measures such as infection and death
+    rates among residents. These measures could serve as care quality indicators, revealing
+    aspects and attributes of the nursing home care that remained hidden before the
+    pandemic. The data reveal significant initial gaps between for-profit and nonprofit
+    nursing homes in COVID-19 infection rates. However, in the ensuing catching-up process
+    triggered by increased transparency, these gaps steadily declined, eventually leading
+    to statistical parity between two types of ownership. We explore the role of local
+    market structure in the adjustment of nursing home industry to the pandemic;
+    retroactively evaluate the reliability of the official ranking system in predicting
+    nursing homes’ performance; and look for evidence of sustainable learning-by-doing
+    effect of the pandemic.
+  links:
+    - label: Paper (PDF)
+      url: /files/Nursing_Homes_WP_Aug2024.pdf
+      kind: pdf
+    - label: SSRN
+      url: https://ssrn.com/abstract=4906864
+      kind: external
+
+- id: local-fiscal-health-russia
+  title: "Local Fiscal Health in Russia: An Achilles’ Heel of Fiscal Federalism?"
+  authors: with Andrey Yushkov and Michael Alexeev
+  category: publication
+  venue: International Journal of Public Administration
+  year: 2024
+  detail: 1–15
+  featured: true
+  summary: >-
+    The first systematic study of local public finance in contemporary Russia,
+    documenting thin own-source revenues, growing dependence on intergovernmental
+    transfers, and weak local fiscal incentives.
+  abstract: >-
+    This article is the first attempt to systematically study local public finance in
+    contemporary Russia. We document that local governments do not have sufficient
+    own-source revenues, are increasingly more dependent on intergovernmental fiscal aid,
+    lack access to market borrowing, and suffer from structural flaws in the design of
+    intergovernmental fiscal relations. Additionally, we present the results of the
+    modified Brown’s 10-point test to compare local fiscal health across the Russian
+    regions. Finally, we assess the strength of local fiscal incentives in 2012–2021 and
+    demonstrate that local governments in Russia lack capacity to foster local economic
+    growth through the tax code.
+  links:
+    - label: Journal article
+      url: https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133
+      kind: external

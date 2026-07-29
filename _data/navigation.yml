@@ -1,11 +1,19 @@
 docs_list_title: Ivan Dedyukhin
+
 docs:
+  - title: Home
+    url: /
 
-- title: CV
-  url: /CV/
+  - title: Research
+    url: /research/
 
-- title: Research
-  url: /research/
+  - title: Teaching
+    url: /teaching/
 
-- title: Teaching
-  url: /teaching/
+  - title: Job Market
+    url: /job-market/
+
+  # `style: button` renders this item as the prominent outlined nav action.
+  - title: CV
+    url: /CV/
+    style: button

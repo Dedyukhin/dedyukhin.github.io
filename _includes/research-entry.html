@@ -1,0 +1,69 @@
+{%- comment -%}
+  Renders one research entry.
+  Parameters
+    include.entry          entry from _data/research.yml (required)
+    include.heading_level  2 or 3 (default 3)
+    include.featured       "true" to render the emphasised job-market treatment
+    include.label          overrides the category label
+    include.show_label     "false" hides the category label, for lists that already
+                           sit under a section heading naming the category
+    include.prefix         prefix for the abstract element id, when an entry can
+                           appear more than once on a page
+{%- endcomment -%}
+{%- assign entry = include.entry -%}
+{%- assign level = include.heading_level | default: 3 -%}
+{%- assign featured = include.featured -%}
+{%- assign prefix = include.prefix | default: "abstract" -%}
+{%- assign panel_id = prefix | append: "-" | append: entry.id -%}
+
+{%- if include.label -%}
+  {%- assign label = include.label -%}
+{%- elsif entry.category == "publication" -%}
+  {%- assign label = "Publication" -%}
+{%- elsif entry.category == "working-paper" -%}
+  {%- assign label = "Working paper" -%}
+{%- else -%}
+  {%- assign label = "Work in progress" -%}
+{%- endif -%}
+
+<article class="research-entry{% if featured == true or featured == 'true' %} research-entry--featured{% endif %}">
+  {%- unless include.show_label == false or include.show_label == "false" %}
+  <p class="research-entry__label">{{ label }}</p>
+  {%- endunless %}
+
+  <h{{ level }} class="research-entry__title">{{ entry.title }}</h{{ level }}>
+
+  {%- if entry.authors %}
+  <p class="research-entry__authors">{{ entry.authors }}</p>
+  {%- endif %}
+
+  {%- if entry.category == "publication" and entry.venue %}
+  <p class="research-entry__status"><em>{{ entry.venue }}</em>{% if entry.detail %}, {{ entry.detail }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}</p>
+  {%- elsif entry.status %}
+  <p class="research-entry__status">{{ entry.status }}</p>
+  {%- endif %}
+
+  {%- if entry.summary %}
+  <p class="research-entry__summary">{{ entry.summary }}</p>
+  {%- endif %}
+
+  {%- assign has_links = false -%}
+  {%- if entry.links and entry.links.size > 0 -%}{%- assign has_links = true -%}{%- endif -%}
+  {%- if has_links or entry.abstract %}
+  <div class="research-entry__actions">
+    {%- if has_links %}{% include material-links.html links=entry.links %}{% endif -%}
+    {%- if entry.abstract %}
+    <button class="btn btn--quiet disclosure-trigger" type="button"
+            aria-expanded="false" aria-controls="{{ panel_id }}">
+      Abstract<span class="disclosure-trigger__marker" aria-hidden="true"></span>
+    </button>
+    {%- endif %}
+  </div>
+  {%- endif %}
+
+  {%- if entry.abstract %}
+  <div class="disclosure-panel research-entry__abstract" id="{{ panel_id }}">
+    <p>{{ entry.abstract }}</p>
+  </div>
+  {%- endif %}
+</article>

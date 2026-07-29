@@ -1,0 +1,79 @@
+# Teaching data. Sourced from the previous Teaching page, files/Academic_CV.pdf
+# and "files/Syllabus SP24-B251-9998.pdf".
+
+summary:
+  role: Instructor of record
+  institution: Indiana University Bloomington
+  course: Fundamentals of Economics for Business I
+  terms_count: 6
+  first_term: Fall 2023
+  enrollment: 55–61 students per section
+  students_total: 350+ students taught
+  # Phrasings used in running prose.
+  section_size: sections of 55–61 students
+  students_phrase: more than 350 students
+
+instructor:
+  - id: b251
+    course: Fundamentals of Economics for Business I
+    code: ECON-B251
+    role: Instructor of record
+    institution: Indiana University Bloomington
+    unit: Kelley School of Business requirement
+    terms: Fall 2023, Spring 2024, Fall 2024, Spring 2025, Fall 2025, Spring 2026
+    enrollment: 55–61 students enrolled per section
+    students_total: 350+ students taught
+    blurb: >-
+      A required introductory economics course for Indiana University's Kelley School
+      of Business.
+    description: >-
+      The first course in a two-course sequence that introduces business students to
+      essential economic concepts. Examines the economic notions of cost and gains from
+      trade, determinants of economic growth, consumer and firm behavior in competitive
+      and non-competitive environments, the effects of taxation, externalities, moral
+      hazard, and adverse selection, and basic game theory.
+    syllabus:
+      label: Syllabus (Spring 2024)
+      url: /files/Syllabus SP24-B251-9998.pdf
+    # First three quotes are shown directly; the rest sit behind a disclosure button.
+    feedback:
+      - quote: >-
+          I love Ivan. He is always willing to help and very knowledgeable. I love his
+          teaching style — he made everything clear and designed the class well. I
+          actually gained life wisdom from him and this class.
+        source: Student, Fall 2024
+      - quote: >-
+          It is very clear that Ivan is passionate about teaching and I think he did an
+          excellent job delivering the material. I would absolutely recommend him to
+          someone else getting ready to take this class.
+        source: Student, Spring 2024
+      - quote: >-
+          I like how passionate my professor seems about the topic and how he is willing
+          to answer any question, regardless of how “stupid” the question may appear to be.
+        source: Student, Fall 2024
+      - quote: I liked how open he was to communication and adjusting to specific needs.
+        source: Student, Fall 2025
+    feedback_note: Teaching evaluations available upon request.
+
+# Teaching assistant experience, transcribed from files/Academic_CV.pdf.
+# TODO(confirm): the CV lists E252 (Indiana University) in Spring 2022 while also listing
+# Public Economics at the New Economic School in Spring 2022. One of the two terms is
+# likely a typo in the CV; both are reproduced here exactly as the CV states them.
+# TODO(confirm): the previous Teaching page described the NES Public Economics and
+# Microeconomics I sections as graduate courses; the CV labels both as undergraduate.
+# The CV wording is used below.
+assistant:
+  - institution: Indiana University Bloomington
+    courses:
+      - name: Fundamentals of Economics for Business I (B251)
+        term: Fall 2022
+      - name: Fundamentals of Economics II (E252)
+        term: Spring 2022
+  - institution: New Economic School
+    courses:
+      - name: Public Economics (undergraduate)
+        term: Spring 2022
+      - name: Introduction to Economics (undergraduate)
+        term: Fall 2021
+      - name: Microeconomics I (undergraduate)
+        term: Spring 2020

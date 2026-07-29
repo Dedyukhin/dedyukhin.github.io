@@ -1,3 +1,14 @@
+# Site identity (used for <title>, meta descriptions, canonical and Open Graph tags)
+title               : Ivan Dedyukhin
+description         : >-
+  Ivan Dedyukhin is a PhD candidate in economics at Indiana University Bloomington,
+  working in experimental economics, game theory and behavioral economics.
+author              : Ivan Dedyukhin
+# TODO(confirm): files/Academic_CV.pdf lists dedyukhin.com as the website, but this
+# repository contains no CNAME file. If the custom domain is not active, change this
+# to https://dedyukhin.github.io so canonical and Open Graph URLs stay correct.
+url                 : "https://dedyukhin.com"
+
 # Where things are
 source              : .
 destination         : ./_site
@@ -32,8 +43,10 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# `remote_theme` is disabled above (this site uses its own layout in _layouts/),
+# so jekyll-remote-theme is not loaded. Re-add "- jekyll-remote-theme" below if a
+# remote theme is ever enabled.
+plugins             : []
 
 # Conversion
 markdown            : kramdown
