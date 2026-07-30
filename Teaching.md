@@ -55,42 +55,38 @@ intro: >-
     <p class="course__meta">{{ course.enrollment }} &middot; {{ course.students_total }}</p>
     <p class="course__description">{{ course.description }}</p>
 
-    {% if course.syllabus.url %}
+    {%- comment -%}
+      Syllabus and the student-comment disclosure share one action row, so the
+      course reads like a research entry: title, metadata, description, actions.
+      All comments sit behind the disclosure, matching abstracts on Research.
+    {%- endcomment -%}
     <div class="course__actions">
+      {% if course.syllabus.url %}
       <a class="btn btn--quiet" href="{{ course.syllabus.url | relative_url | uri_escape }}" target="_blank" rel="noopener noreferrer">{{ course.syllabus.label }}</a>
+      {% endif %}
+      {% if course.feedback.size > 0 %}
+      <button class="btn btn--quiet disclosure-trigger" type="button"
+              aria-expanded="false" aria-controls="feedback-{{ course.id }}">
+        Student feedback<span class="disclosure-trigger__marker" aria-hidden="true"></span>
+      </button>
+      {% endif %}
     </div>
-    {% endif %}
 
     {% if course.feedback.size > 0 %}
     <div class="feedback">
-      <h4 class="feedback__title">Selected student feedback</h4>
-
-      {% for item in course.feedback limit: 3 %}
-      <blockquote class="quote">
-        <p>{{ item.quote }}</p>
-        <footer>&mdash; {{ item.source }}</footer>
-      </blockquote>
-      {% endfor %}
-
-      {% assign extra = course.feedback | size | minus: 3 %}
-      {% if extra > 0 %}
-      <button class="btn btn--quiet disclosure-trigger" type="button"
-              aria-expanded="false" aria-controls="feedback-{{ course.id }}">
-        More student comments<span class="disclosure-trigger__marker" aria-hidden="true"></span>
-      </button>
-      <div class="disclosure-panel" id="feedback-{{ course.id }}">
-        {% for item in course.feedback offset: 3 %}
+      <div class="disclosure-panel feedback__panel" id="feedback-{{ course.id }}">
+        <h4 class="feedback__title">Selected student comments</h4>
+        {% for item in course.feedback %}
         <blockquote class="quote">
           <p>{{ item.quote }}</p>
           <footer>&mdash; {{ item.source }}</footer>
         </blockquote>
         {% endfor %}
-      </div>
-      {% endif %}
 
-      {% if course.feedback_note %}
-      <p class="note">{{ course.feedback_note }}</p>
-      {% endif %}
+        {% if course.feedback_note %}
+        <p class="note">{{ course.feedback_note }}</p>
+        {% endif %}
+      </div>
     </div>
     {% endif %}
   </article>

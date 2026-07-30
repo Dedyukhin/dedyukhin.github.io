@@ -30,8 +30,12 @@ description: >-
 {%- endcomment -%}
 
 {% assign profile = site.data.profile %}
+
+{% comment %} Needed only by the Selected research and Teaching blocks below,
+both of which are currently commented out.
 {% assign selected = site.data.research | where: "featured", true %}
 {% assign teaching = site.data.teaching.summary %}
+{% endcomment %}
 
 {% comment %} Job market - DISABLED (step 1)
 {% assign jmp_id = profile.job_market.paper_id %}
@@ -45,30 +49,6 @@ description: >-
          alt="{{ profile.photo.alt | strip_newlines | escape }}"
          width="{{ profile.photo.width }}" height="{{ profile.photo.height }}">
   </figure>
-
-  <dl class="profile-details">
-    <div class="profile-details__row">
-      <dt class="profile-details__term">Email</dt>
-      <dd class="profile-details__value"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></dd>
-    </div>
-    <div class="profile-details__row">
-      <dt class="profile-details__term">Office</dt>
-      <dd class="profile-details__value">{{ profile.office }}</dd>
-    </div>
-    <div class="profile-details__row">
-      <dt class="profile-details__term">CV</dt>
-      <dd class="profile-details__value">
-        <a href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Academic CV (PDF)</a>
-      </dd>
-    </div>
-    <div class="profile-details__row">
-      <dt class="profile-details__term">Profiles</dt>
-      <dd class="profile-details__value">
-        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508" target="_blank" rel="noopener noreferrer">SSRN</a> ·
-        <a href="https://www.linkedin.com/in/ivan-dedyukhin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </dd>
-    </div>
-  </dl>
 
   <div class="profile__body">
     <h1 class="profile__name" id="profile-name">{{ profile.name }}</h1>
@@ -101,6 +81,30 @@ description: >-
       {% endcomment %}
     </div>
   </div>
+
+  <dl class="profile-details">
+    <div class="profile-details__row">
+      <dt class="profile-details__term">Email</dt>
+      <dd class="profile-details__value"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></dd>
+    </div>
+    <div class="profile-details__row">
+      <dt class="profile-details__term">Office</dt>
+      <dd class="profile-details__value">{{ profile.office }}</dd>
+    </div>
+    <div class="profile-details__row">
+      <dt class="profile-details__term">CV</dt>
+      <dd class="profile-details__value">
+        <a href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Academic CV (PDF)</a>
+      </dd>
+    </div>
+    <div class="profile-details__row">
+      <dt class="profile-details__term">Profiles</dt>
+      <dd class="profile-details__value">
+        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508" target="_blank" rel="noopener noreferrer">SSRN</a> ·
+        <a href="https://www.linkedin.com/in/ivan-dedyukhin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </dd>
+    </div>
+  </dl>
 </section>
 
 {% comment %} Job market - DISABLED (step 1): featured job-market paper banner
@@ -116,14 +120,16 @@ description: >-
 {% endif %}
 {% endcomment %}
 
+{% comment %} Selected research - removed from the homepage by request.
+The Research page is the single home for papers; the profile actions and the nav
+both link to it. To bring this block back, uncomment it and restore the
+`selected` assign near the top of this file. If the job-market banner is also
+re-enabled, wrap the include in an "unless entry.id == jmp_id" guard so the
+featured paper is not listed twice.
 <section class="section" aria-labelledby="selected-research">
   <h2 class="section__title" id="selected-research">Selected research</h2>
 
   <div class="research-list">
-    {%- comment -%}
-      Job market note: when the banner above is re-enabled, wrap this include in an
-      "unless entry.id == jmp_id" guard again so the featured paper is not listed twice.
-    {%- endcomment -%}
     {% for entry in selected %}
       {% include research-entry.html entry=entry heading_level=3 prefix="home-abstract" %}
     {% endfor %}
@@ -131,6 +137,7 @@ description: >-
 
   <a class="more-link" href="{{ "/research/" | relative_url }}">View all research</a>
 </section>
+{% endcomment %}
 
 <section class="section" aria-labelledby="research-interests">
   <h2 class="section__title" id="research-interests">Research interests</h2>
@@ -141,6 +148,10 @@ description: >-
   </ul>
 </section>
 
+{% comment %} Teaching summary - removed from the homepage by request.
+The Teaching page carries the full record and is linked from the nav. To bring
+this block back, uncomment it and restore the `teaching` assign near the top of
+this file.
 <section class="section" aria-labelledby="teaching-summary">
   <h2 class="section__title" id="teaching-summary">Teaching</h2>
   <p class="prose">
@@ -151,6 +162,7 @@ description: >-
   </p>
   <a class="more-link" href="{{ "/teaching/" | relative_url }}">Teaching experience and student feedback</a>
 </section>
+{% endcomment %}
 
 <section class="section" aria-labelledby="contact">
   <h2 class="section__title" id="contact">Contact</h2>

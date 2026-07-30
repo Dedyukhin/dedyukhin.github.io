@@ -77,7 +77,9 @@
 
     /* Content widths */
     --width-content: 1100px;
-    --width-prose: 70ch;
+    /* Body copy, abstracts and summaries run the full content column rather than
+       being capped at a narrower measure, so text reaches both edges of the page. */
+    --width-prose: 100%;
 
     /* Radius, borders, focus */
     --radius-sm: 3px;
@@ -540,7 +542,6 @@ strong {
 }
 
 .profile__summary {
-    max-width: 62ch;
     line-height: var(--leading-relaxed);
 }
 
@@ -1051,7 +1052,7 @@ a:hover {
     flex-wrap: wrap;
     gap: var(--space-1) var(--space-4);
     justify-content: space-between;
-    max-width: 640px;
+    max-width: 820px;
     padding: var(--space-1) 0;
     font-family: var(--font-sans);
     font-size: var(--text-md);
@@ -1067,7 +1068,14 @@ a:hover {
 /* Student feedback */
 .feedback {
     max-width: var(--width-prose);
-    margin-top: var(--space-5);
+    /* Wraps only the disclosure panel, so it must not add space while collapsed. */
+    margin-top: 0;
+}
+
+.feedback__panel {
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px dashed var(--color-border-strong);
 }
 
 .feedback__title {
@@ -1268,23 +1276,20 @@ a:hover {
         padding-top: var(--space-6);
     }
 
-    /* Photo, then name and actions, then the detail list. */
+    /* A full-width square photo dominates a phone screen and leaves the name
+       stranded beside empty space, so below this width the grid is dropped and
+       the photo floats as a compact portrait that the name and title wrap
+       around. Source order (photo, body, details) makes this work. */
     .profile {
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-areas:
-            "photo"
-            "body"
-            "details";
-        grid-template-rows: auto;
-        row-gap: var(--space-5);
+        display: block;
+        padding-bottom: var(--space-5);
     }
 
     .profile__figure {
-        max-width: 200px;
-    }
-
-    .profile-details {
-        margin-top: 0;
+        float: left;
+        width: 116px;
+        max-width: 38%;
+        margin: var(--space-1) var(--space-4) var(--space-2) 0;
     }
 
     .profile__name {
@@ -1293,6 +1298,44 @@ a:hover {
 
     .profile__role {
         font-size: var(--text-base);
+    }
+
+    .profile__summary {
+        clear: none;
+    }
+
+    /* Actions and contact details always start on a fresh full-width line. */
+    .btn-row,
+    .profile-details {
+        clear: left;
+    }
+
+    .profile-details {
+        margin-top: var(--space-5);
+        padding-top: var(--space-4);
+        border-top: var(--border-hairline);
+    }
+
+    /* The cramped two-column term/value grid reads badly at this width. Values
+       stand on their own; the terms stay in the accessibility tree. */
+    .profile-details__term {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .profile-details__row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        padding: var(--space-2) 0;
+    }
+
+    .profile-details__value {
+        font-size: var(--text-md);
     }
 
     .research-entry--featured .research-entry__title {
@@ -1330,12 +1373,8 @@ a:hover {
     }
 
     .profile__figure {
-        max-width: 168px;
-    }
-
-    .profile-details__row {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 0;
+        width: 96px;
+        margin-right: var(--space-3);
     }
 
     .materials__item,
