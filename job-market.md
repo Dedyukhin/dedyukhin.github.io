@@ -35,9 +35,9 @@ description: >-
   {% endif %}
 
   <div class="btn-row">
-    <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
+    <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">View CV (PDF)</a>
     <a class="btn" href="{{ "/research/" | relative_url }}">All research</a>
-    <a class="btn" href="mailto:{{ profile.email }}">Email me</a>
+    {% include copy-email.html class="btn copy-email--button" label="Copy email" done="Email copied" %}
   </div>
 </section>
 
@@ -58,7 +58,7 @@ description: >-
         Curriculum vitae
         <span class="materials__detail">Updated {{ profile.cv.updated }}</span>
       </span>
-      <a class="btn btn--quiet" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+      <a class="btn btn--quiet" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">View PDF</a>
     </li>
 
     {%- comment -%}
@@ -80,7 +80,7 @@ description: >-
         <span class="materials__detail">Ownership, Asymmetric Information, and Quality of Care for the Elderly</span>
       </span>
       <span>
-        <a class="btn btn--quiet" href="{{ "/files/Nursing_Homes_WP_Aug2024.pdf" | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        <a class="btn btn--quiet" href="{{ "/files/Nursing_Homes_WP_Aug2024.pdf" | relative_url }}" target="_blank" rel="noopener noreferrer">View PDF</a>
       </span>
     </li>
   </ul>
@@ -109,7 +109,7 @@ description: >-
 <section class="section" aria-labelledby="jm-contact">
   <h2 class="section__title" id="jm-contact">Contact</h2>
   <p class="prose">
-    <a href="mailto:{{ profile.email }}">{{ profile.email }}</a><br>
+    {% include copy-email.html %}<br>
     {{ profile.department }}, {{ profile.institution }}<br>
     {{ profile.office }}
   </p>

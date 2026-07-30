@@ -73,9 +73,9 @@ both of which are currently commented out.
     </p>
 
     <div class="btn-row">
-      <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
+      <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">View CV (PDF)</a>
       <a class="btn btn--outline" href="{{ "/research/" | relative_url }}">Research</a>
-      <a class="btn" href="mailto:{{ profile.email }}">Email me</a>
+      {% include copy-email.html class="btn copy-email--button" label="Copy email" done="Email copied" %}
       {% comment %} Job market - DISABLED (step 1): strongest action after the CV
       <a class="btn btn--outline" href="{{ "/job-market/" | relative_url }}">Job market paper</a>
       {% endcomment %}
@@ -85,7 +85,7 @@ both of which are currently commented out.
   <dl class="profile-details">
     <div class="profile-details__row">
       <dt class="profile-details__term">Email</dt>
-      <dd class="profile-details__value"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></dd>
+      <dd class="profile-details__value">{% include copy-email.html %}</dd>
     </div>
     <div class="profile-details__row">
       <dt class="profile-details__term">Office</dt>
@@ -94,14 +94,14 @@ both of which are currently commented out.
     <div class="profile-details__row">
       <dt class="profile-details__term">CV</dt>
       <dd class="profile-details__value">
-        <a href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Academic CV (PDF)</a>
+        <a href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
       </dd>
     </div>
     <div class="profile-details__row">
       <dt class="profile-details__term">Profiles</dt>
       <dd class="profile-details__value">
-        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508" target="_blank" rel="noopener noreferrer">SSRN</a> ·
-        <a href="https://www.linkedin.com/in/ivan-dedyukhin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/ivan-dedyukhin/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+        <a href="https://scholar.google.com/citations?user=CDPKpxwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </dd>
     </div>
   </dl>
@@ -164,12 +164,17 @@ this file.
 </section>
 {% endcomment %}
 
+{% comment %} Contact - removed from the homepage by request.
+The same email, department and office already sit in the detail list beside the
+photo, and the footer carries them on every page, so this block only repeated
+them. Uncomment to bring it back.
 <section class="section" aria-labelledby="contact">
   <h2 class="section__title" id="contact">Contact</h2>
   <p class="prose">
-    <a href="mailto:{{ profile.email }}">{{ profile.email }}</a><br>
+    {% include copy-email.html %}<br>
     {{ profile.department }}, {{ profile.institution }}<br>
     {{ profile.office }}
   </p>
   {% include social-links.html skip="Email" %}
 </section>
+{% endcomment %}

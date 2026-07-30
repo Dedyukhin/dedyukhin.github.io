@@ -84,23 +84,30 @@ education:
 #   paper_id: when-cooperation-drives-continuation
 # ---------------------------------------------------------------------------
 
-# Profile / footer links. Only entries with a `url` are rendered.
+# Profile / footer links. An entry needs either a `url` or `type: copy`.
 links:
+  # Renders as a copy-to-clipboard control rather than a mailto link.
   - label: Email
-    url: mailto:idedyukh@iu.edu
+    type: copy
     text: idedyukh@iu.edu
   - label: CV
     url: /files/Academic_CV.pdf
-    text: Academic CV (PDF)
-  - label: SSRN
-    url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508
-    text: SSRN author page
+    text: CV (PDF)
   - label: LinkedIn
     url: https://www.linkedin.com/in/ivan-dedyukhin/
     text: LinkedIn
-  - label: X
-    url: https://x.com/duduhin
-    text: X (Twitter)
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=CDPKpxwAAAAJ&hl=en"
+    text: Google Scholar
+  # Kept out of the profile and footer at your request, so only professional
+  # profiles are listed. Uncomment either one to bring it back. Individual
+  # papers still link to SSRN from the Research page.
+  # - label: SSRN
+  #   url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508
+  #   text: SSRN author page
+  # - label: X
+  #   url: https://x.com/duduhin
+  #   text: X (Twitter)
   # TODO(optional): add a GitHub profile URL here if you want one listed.
 
 photo:
