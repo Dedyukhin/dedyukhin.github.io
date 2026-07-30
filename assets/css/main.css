@@ -31,7 +31,8 @@
     /* Text */
     --color-text: #23282e;
     --color-text-muted: #59616b;
-    --color-text-soft: #6d757f;
+    /* 5.0:1 on --color-bg; used for 12-13px labels, so it needs the headroom */
+    --color-text-soft: #656d77;
     --color-text-inverse: #ffffff;
 
     /* Surfaces */

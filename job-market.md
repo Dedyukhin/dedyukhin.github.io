@@ -1,4 +1,10 @@
 ---
+# Job market - DISABLED. This page is written and working but is not built or
+# published: `published: false` keeps it out of the site entirely, so /job-market/
+# returns 404 and the page is not indexed. Delete the `published: false` line to
+# bring it back, and see the note at the top of README.md for the four other
+# job-market switches that need flipping at the same time.
+published: false
 layout: default
 title: Job Market
 heading: Job Market

@@ -10,8 +10,11 @@ docs:
   - title: Teaching
     url: /teaching/
 
-  - title: Job Market
-    url: /job-market/
+  # Job market - DISABLED. Uncomment together with the rest of the job-market
+  # content (see the note at the top of README.md) and remove
+  # `published: false` from job-market.md, or this link will 404.
+  # - title: Job Market
+  #   url: /job-market/
 
   # `style: button` renders this item as the prominent outlined nav action.
   - title: CV

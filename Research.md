@@ -13,11 +13,14 @@ intro: >-
   sophistication. Abstracts are available for each project below.
 ---
 
-{% assign jmp_id = site.data.profile.job_market.paper_id %}
-{% assign jmp = site.data.research | where: "id", jmp_id | first %}
 {% assign working_papers = site.data.research | where: "category", "working-paper" %}
 {% assign publications = site.data.research | where: "category", "publication" %}
 {% assign in_progress = site.data.research | where: "category", "work-in-progress" %}
+
+{% comment %} Job market - DISABLED (step 2): featured job-market paper section.
+Re-enable this together with the other four steps listed at the top of README.md.
+{% assign jmp_id = site.data.profile.job_market.paper_id %}
+{% assign jmp = site.data.research | where: "id", jmp_id | first %}
 
 {% if jmp %}
 <section class="section section--tight" aria-labelledby="job-market-paper">
@@ -27,6 +30,7 @@ intro: >-
   </div>
 </section>
 {% endif %}
+{% endcomment %}
 
 {% if working_papers.size > 0 %}
 <section class="section" aria-labelledby="working-papers">
@@ -54,10 +58,12 @@ intro: >-
 <section class="section" aria-labelledby="work-in-progress">
   <h2 class="section__title" id="work-in-progress">Work in progress</h2>
   <div class="research-list">
+    {%- comment -%}
+      Job market note: when the section above is re-enabled, wrap this include in an
+      "unless entry.id == jmp_id" guard again so the featured paper is not listed twice.
+    {%- endcomment -%}
     {% for entry in in_progress %}
-      {% unless entry.id == jmp_id %}
-        {% include research-entry.html entry=entry heading_level=3 show_label=false %}
-      {% endunless %}
+      {% include research-entry.html entry=entry heading_level=3 show_label=false %}
     {% endfor %}
   </div>
 </section>

@@ -5,14 +5,38 @@ permalink: /
 description: >-
   Ivan Dedyukhin is a PhD candidate in economics at Indiana University Bloomington
   working in experimental economics, game theory and behavioral economics. Research
-  papers, teaching experience, job-market materials and CV.
+  papers, teaching experience and CV.
 ---
 
+{%- comment -%}
+  ===========================================================================
+  Job market - DISABLED
+
+  Every piece of job-market content on the site is commented out for now.
+  To switch it all back on:
+
+    1. this file - uncomment the two `jmp` assigns below, the "Job market
+       paper" button in the profile actions, the job-market status line, and
+       the job-market banner section that follows the profile
+    2. Research.md - uncomment the job-market paper section at the top
+    3. _data/profile.yml - uncomment the `job_market:` block and set
+       `paper_id` (and optionally `status`)
+    4. _data/navigation.yml - uncomment the "Job Market" nav item
+    5. job-market.md - remove `published: false` from the front matter
+
+  Nothing else needs to change: the CSS and the research-entry include
+  already handle the featured job-market treatment.
+  ===========================================================================
+{%- endcomment -%}
+
 {% assign profile = site.data.profile %}
-{% assign jmp_id = profile.job_market.paper_id %}
-{% assign jmp = site.data.research | where: "id", jmp_id | first %}
 {% assign selected = site.data.research | where: "featured", true %}
 {% assign teaching = site.data.teaching.summary %}
+
+{% comment %} Job market - DISABLED (step 1)
+{% assign jmp_id = profile.job_market.paper_id %}
+{% assign jmp = site.data.research | where: "id", jmp_id | first %}
+{% endcomment %}
 
 <section class="profile" aria-labelledby="profile-name">
   <figure class="profile__figure">
@@ -55,12 +79,11 @@ description: >-
     </p>
     <p class="profile__fields">{{ profile.fields | join: " · " }}</p>
 
-    {%- comment -%}
-      Rendered only once a job-market status is confirmed in _data/profile.yml.
-    {%- endcomment -%}
+    {% comment %} Job market - DISABLED (step 1): availability line
     {% if profile.job_market.status != "" %}
     <p class="profile__status">{{ profile.job_market.status }}</p>
     {% endif %}
+    {% endcomment %}
 
     <p class="profile__summary">{{ profile.bio_research }}</p>
 
@@ -71,13 +94,16 @@ description: >-
 
     <div class="btn-row">
       <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
-      <a class="btn btn--outline" href="{{ "/job-market/" | relative_url }}">Job market paper</a>
-      <a class="btn" href="{{ "/research/" | relative_url }}">Research</a>
+      <a class="btn btn--outline" href="{{ "/research/" | relative_url }}">Research</a>
       <a class="btn" href="mailto:{{ profile.email }}">Email me</a>
+      {% comment %} Job market - DISABLED (step 1): strongest action after the CV
+      <a class="btn btn--outline" href="{{ "/job-market/" | relative_url }}">Job market paper</a>
+      {% endcomment %}
     </div>
   </div>
 </section>
 
+{% comment %} Job market - DISABLED (step 1): featured job-market paper banner
 {% if jmp %}
 <section class="jm-banner" aria-labelledby="jmp-heading">
   <h2 class="u-visually-hidden" id="jmp-heading">Job market paper</h2>
@@ -88,15 +114,18 @@ description: >-
   </p>
 </section>
 {% endif %}
+{% endcomment %}
 
 <section class="section" aria-labelledby="selected-research">
   <h2 class="section__title" id="selected-research">Selected research</h2>
 
   <div class="research-list">
+    {%- comment -%}
+      Job market note: when the banner above is re-enabled, wrap this include in an
+      "unless entry.id == jmp_id" guard again so the featured paper is not listed twice.
+    {%- endcomment -%}
     {% for entry in selected %}
-      {% unless entry.id == jmp_id %}
-        {% include research-entry.html entry=entry heading_level=3 prefix="home-abstract" %}
-      {% endunless %}
+      {% include research-entry.html entry=entry heading_level=3 prefix="home-abstract" %}
     {% endfor %}
   </div>
 

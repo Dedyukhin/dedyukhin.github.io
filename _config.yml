@@ -4,9 +4,10 @@ description         : >-
   Ivan Dedyukhin is a PhD candidate in economics at Indiana University Bloomington,
   working in experimental economics, game theory and behavioral economics.
 author              : Ivan Dedyukhin
-# TODO(confirm): files/Academic_CV.pdf lists dedyukhin.com as the website, but this
-# repository contains no CNAME file. If the custom domain is not active, change this
-# to https://dedyukhin.github.io so canonical and Open Graph URLs stay correct.
+# Custom domain, confirmed. Used for canonical and Open Graph URLs. The domain
+# itself is configured in the repository's GitHub Pages settings, which is why no
+# CNAME file is needed here: this site deploys through the Actions workflow in
+# .github/workflows rather than from a branch.
 url                 : "https://dedyukhin.com"
 
 # Where things are

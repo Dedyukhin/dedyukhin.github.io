@@ -22,9 +22,7 @@
 - id: when-cooperation-drives-continuation
   title: When Cooperation Drives Continuation
   category: work-in-progress
-  # TODO(update): change to "Job market paper — draft available <month year>" and add
-  # the paper/slides links below once the draft is ready to circulate.
-  status: Work in progress
+  featured: true
   summary: >-
     An indefinitely repeated prisoner’s dilemma in which mutual cooperation makes
     future interaction more likely. A 2×2 laboratory experiment tests whether the
@@ -74,12 +72,14 @@
     to think more deeply.
   links: []
 
-- id: signal-structure-regime-change
-  title: Signal Structure and Free-Riding in Regime Change
-  category: work-in-progress
-  # TODO(missing): no abstract or summary for this project exists in the repository.
-  # Add a `summary:` (one or two sentences) when available.
-  links: []
+# Not published yet, at your request - uncomment to add it to the Research page.
+# It will appear under "Work in progress". A `summary:` of one or two sentences
+# would sit under the title; there is none in the repository yet.
+#
+# - id: signal-structure-regime-change
+#   title: Signal Structure and Free-Riding in Regime Change
+#   category: work-in-progress
+#   links: []
 
 - id: nursing-homes-ownership
   title: >-

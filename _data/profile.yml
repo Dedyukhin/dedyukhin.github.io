@@ -63,18 +63,26 @@ education:
     institution: New Economic School & Higher School of Economics
     year: 2022
 
-job_market:
-  # TODO(confirm): no job-market year or availability statement exists anywhere in
-  # this repository. The CV states "Ph.D. Economics ... 2027 (expected)", which is
-  # what the site currently shows. Set `status` to e.g. "On the 2026-2027 economics
-  # job market" once confirmed, and it will appear on the homepage and Job Market page.
-  status: ""
-  # TODO(confirm): the job-market paper designation is not recorded anywhere in the
-  # repository. "When Cooperation Drives Continuation" is used here because it is the
-  # only single-authored experimental project with a complete abstract. Change this id
-  # (it must match an `id` in _data/research.yml) or set it to "" to remove all
-  # job-market-paper labelling from the site.
-  paper_id: when-cooperation-drives-continuation
+# ---------------------------------------------------------------------------
+# Job market - DISABLED
+#
+# All job-market content is switched off site-wide for now. To turn it back on,
+# uncomment the `job_market:` block below and follow the four other steps listed
+# in the "Job market - DISABLED" note at the top of README.md.
+#
+# `status`   an availability line, e.g. "On the 2026-2027 economics job market".
+#            Leave as "" to show nothing. Not recorded anywhere in this
+#            repository, so it must be filled in by hand.
+# `paper_id` must match an `id` in _data/research.yml. Setting it is what adds
+#            the "Job Market Paper" label and the featured panel. Not recorded
+#            anywhere in this repository either; "When Cooperation Drives
+#            Continuation" is suggested because it is the only single-authored
+#            experimental project with a complete abstract.
+#
+# job_market:
+#   status: ""
+#   paper_id: when-cooperation-drives-continuation
+# ---------------------------------------------------------------------------
 
 # Profile / footer links. Only entries with a `url` are rendered.
 links:
