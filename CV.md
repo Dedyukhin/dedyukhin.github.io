@@ -16,8 +16,8 @@ description: >-
 </p>
 
 <div class="cv-actions">
-  <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" download>Download CV (PDF)</a>
-  <a class="btn btn--outline" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">Open in a new tab</a>
+  <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">View CV (PDF)</a>
+  <a class="btn btn--outline" href="{{ profile.cv.url | relative_url }}" download>Save a copy</a>
 </div>
 
 <p class="cv-preview-note note">

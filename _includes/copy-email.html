@@ -1,0 +1,19 @@
+{%- comment -%}
+  Email address that copies itself to the clipboard instead of opening a mail
+  client. The address is always rendered as plain text, so it stays readable and
+  selectable when JavaScript is unavailable; only the "Copy" affordance is
+  enhanced in (see .js rules in main.css and initCopy in main.js).
+
+  Parameters
+    include.class    extra class on the button
+    include.label    visible text (defaults to the address itself)
+    include.done     confirmation text (defaults to "Copied")
+{%- endcomment -%}
+{%- assign address = site.data.profile.email -%}
+<button type="button"
+        class="copy-email {{ include.class }}"
+        data-copy-text="{{ address }}"
+        data-copy-done="{{ include.done | default: 'Copied' }}">
+  <span class="copy-email__value">{{ include.label | default: address }}</span>
+  <span class="copy-email__action" data-copy-feedback aria-live="polite">Copy</span>
+</button>

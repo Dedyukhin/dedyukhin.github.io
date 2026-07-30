@@ -1,13 +1,15 @@
 /**
  * Ivan Dedyukhin - academic website
  *
- * Two small progressive enhancements, no dependencies:
- *   1. Disclosure controls (abstracts, additional student feedback)
+ * Three small progressive enhancements, no dependencies:
+ *   1. Disclosure controls (abstracts, student feedback)
  *   2. Compact navigation menu on small screens
+ *   3. Copy-to-clipboard for the email address
  *
  * Every element this file touches is fully usable without JavaScript: the
  * disclosure panels render open and their triggers stay hidden until wired up
- * here, and the navigation list is a plain visible list until collapsed here.
+ * here, the navigation list is a plain visible list until collapsed here, and
+ * the email address is plain selectable text with its "Copy" hint hidden.
  */
 (function () {
     'use strict';
@@ -97,9 +99,74 @@
         }
     }
 
+    /* --------------------------------------------------------------------
+       Copy to clipboard
+       -------------------------------------------------------------------- */
+
+    // Used when the async Clipboard API is unavailable (older browsers) or is
+    // refused, which happens outside a secure context.
+    function legacyCopy(text) {
+        var field = document.createElement('textarea');
+        var copied = false;
+
+        field.value = text;
+        field.setAttribute('readonly', '');
+        field.style.position = 'fixed';
+        field.style.top = '-1000px';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+
+        try {
+            copied = document.execCommand('copy');
+        } catch (error) {
+            copied = false;
+        }
+
+        document.body.removeChild(field);
+        return copied;
+    }
+
+    function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(text).then(function () {
+                return true;
+            }, function () {
+                return legacyCopy(text);
+            });
+        }
+        return Promise.resolve(legacyCopy(text));
+    }
+
+    function initCopy() {
+        var controls = document.querySelectorAll('[data-copy-text]');
+
+        Array.prototype.forEach.call(controls, function (control) {
+            var feedback = control.querySelector('[data-copy-feedback]') || control;
+            var idle = feedback.textContent;
+            var done = control.getAttribute('data-copy-done') || 'Copied';
+            var timer;
+
+            control.addEventListener('click', function () {
+                copyText(control.getAttribute('data-copy-text')).then(function (copied) {
+                    // On failure the address stays on screen to select by hand.
+                    feedback.textContent = copied ? done : 'Select and copy';
+                    control.setAttribute('data-copied', copied ? 'true' : 'false');
+
+                    window.clearTimeout(timer);
+                    timer = window.setTimeout(function () {
+                        feedback.textContent = idle;
+                        control.removeAttribute('data-copied');
+                    }, 2500);
+                });
+            });
+        });
+    }
+
     function init() {
         initDisclosures();
         initNav();
+        initCopy();
     }
 
     if (document.readyState === 'loading') {

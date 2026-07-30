@@ -602,6 +602,98 @@ a:hover {
     color: var(--color-accent);
 }
 
+/* Copy-to-clipboard email ------------------------------------------------ */
+
+/* Without JavaScript this is inert, so it renders as plain selectable text. */
+.copy-email {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: text;
+}
+
+.js .copy-email {
+    cursor: pointer;
+}
+
+.copy-email__value {
+    color: var(--color-accent);
+}
+
+.js .copy-email:hover .copy-email__value {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+/* The affordance only appears once the button actually does something. */
+.copy-email__action {
+    display: none;
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    white-space: nowrap;
+}
+
+.js .copy-email__action {
+    display: inline;
+}
+
+.copy-email[data-copied="true"] .copy-email__action {
+    color: var(--color-accent);
+}
+
+/* Variant used inside the footer and other link rows */
+.copy-email--inline .copy-email__value {
+    color: var(--color-text-muted);
+}
+
+.js .copy-email--inline:hover .copy-email__value {
+    color: var(--color-accent);
+}
+
+/* Variant that sits in a row of buttons and must match them exactly */
+.copy-email--button {
+    justify-content: center;
+    text-align: center;
+}
+
+.copy-email--button .copy-email__value {
+    color: inherit;
+}
+
+.js .copy-email--button:hover .copy-email__value {
+    text-decoration: none;
+}
+
+/* In a button the confirmation replaces the label rather than sitting beside it. */
+.copy-email--button .copy-email__action,
+.js .copy-email--button .copy-email__action {
+    display: none;
+}
+
+.js .copy-email--button[data-copied] .copy-email__value {
+    display: none;
+}
+
+.js .copy-email--button[data-copied] .copy-email__action {
+    display: inline;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--color-accent);
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -1287,9 +1379,9 @@ a:hover {
 
     .profile__figure {
         float: left;
-        width: 116px;
-        max-width: 38%;
-        margin: var(--space-1) var(--space-4) var(--space-2) 0;
+        width: 168px;
+        max-width: 45%;
+        margin: var(--space-1) var(--space-4) var(--space-3) 0;
     }
 
     .profile__name {
@@ -1373,8 +1465,7 @@ a:hover {
     }
 
     .profile__figure {
-        width: 96px;
-        margin-right: var(--space-3);
+        width: 148px;
     }
 
     .materials__item,
