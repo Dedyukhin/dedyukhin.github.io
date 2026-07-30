@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders a list of document links for a research entry.
+  Parameters: include.links (array of { label, url, kind })
+  Only links that carry a url are rendered, so nothing is ever a dead end.
+{%- endcomment -%}
+{%- for link in include.links -%}
+  {%- if link.url and link.url != "" -%}
+    {%- assign new_tab = false -%}
+    {%- if link.kind == "external" or link.kind == "pdf" -%}{%- assign new_tab = true -%}{%- endif -%}
+    <a class="btn btn--quiet"
+       href="{% if link.kind == 'external' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"
+       {%- if new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label }}</a>
+  {%- endif -%}
+{%- endfor -%}

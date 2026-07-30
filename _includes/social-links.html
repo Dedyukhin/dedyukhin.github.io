@@ -1,0 +1,22 @@
+{%- comment -%}
+  Renders site.data.profile.links as a list of descriptive text links.
+  Optional parameters:
+    include.class  extra class on the list
+    include.skip   comma-separated labels to leave out (e.g. "Email,CV")
+{%- endcomment -%}
+{%- assign skip = include.skip | default: "" | split: "," -%}
+<ul class="link-row {{ include.class }}">
+  {%- for link in site.data.profile.links -%}
+    {%- unless skip contains link.label -%}
+    {%- if link.url and link.url != "" -%}
+      {%- assign is_mailto = false -%}
+      {%- if link.url contains "mailto:" -%}{%- assign is_mailto = true -%}{%- endif -%}
+      {%- assign is_external = false -%}
+      {%- if link.url contains "://" or link.url contains ".pdf" -%}{%- assign is_external = true -%}{%- endif -%}
+      <li>
+        <a href="{% if is_mailto %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"{% if is_external and is_mailto == false %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.text | default: link.label }}</a>
+      </li>
+    {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+</ul>

@@ -1,66 +1,70 @@
 ---
 layout: default
-title: Research - Ivan Dedyukhin
+title: Research
+heading: Research
 permalink: /research/
+description: >-
+  Working papers, publications and work in progress by Ivan Dedyukhin on cooperation
+  under strategic uncertainty, repeated games, perceptions of AI assistance, and
+  public economics.
+intro: >-
+  My work is primarily experimental: I design laboratory experiments to test how
+  strategic incentives and beliefs about opponents shape cooperation and
+  sophistication. Abstracts are available for each project below.
 ---
 
-<h2>Publications</h2>
+{% assign working_papers = site.data.research | where: "category", "working-paper" %}
+{% assign publications = site.data.research | where: "category", "publication" %}
+{% assign in_progress = site.data.research | where: "category", "work-in-progress" %}
 
-<div class="pub-card">
-  <div class="pub-header">
-    <a class="pub-title" href="https://www.tandfonline.com/doi/full/10.1080/01900692.2024.2399133"><strong>Local fiscal health in Russia: An Achilles’ heel of fiscal federalism?</strong> (with Andrey Yushkov and Michael Alexeev) </a>
-    <div class="pub-meta"><em>International Journal of Public Administration</em>, 1–15, 2024</div>
-    <div class="button-group">
-      <a class="mini-btn" onclick="toggleAbstract('abstract_local_fiscal_health')">Abstract</a>
-    </div>
+{% comment %} Job market - DISABLED (step 2): featured job-market paper section.
+Re-enable this together with the other four steps listed at the top of README.md.
+{% assign jmp_id = site.data.profile.job_market.paper_id %}
+{% assign jmp = site.data.research | where: "id", jmp_id | first %}
+
+{% if jmp %}
+<section class="section section--tight" aria-labelledby="job-market-paper">
+  <h2 class="u-visually-hidden" id="job-market-paper">Job market paper</h2>
+  <div class="jm-banner">
+    {% include research-entry.html entry=jmp heading_level=3 featured=true label="Job Market Paper" %}
   </div>
+</section>
+{% endif %}
+{% endcomment %}
 
-  <div id="abstract_local_fiscal_health" class="abstract-container">
-    This article is the first attempt to systematically study local public finance in contemporary Russia. We document that local governments do not have sufficient own-source revenues, are increasingly more dependent on intergovernmental fiscal aid, lack access to market borrowing, and suffer from structural flaws in the design of intergovernmental fiscal relations. Additionally, we present the results of the modified Brown’s 10-point test to compare local fiscal health across the Russian regions. Finally, we assess the strength of local fiscal incentives in 2012–2021 and demonstrate that local governments in Russia lack capacity to foster local economic growth through the tax code.
+{% if working_papers.size > 0 %}
+<section class="section" aria-labelledby="working-papers">
+  <h2 class="section__title" id="working-papers">Working papers</h2>
+  <div class="research-list">
+    {% for entry in working_papers %}
+      {% include research-entry.html entry=entry heading_level=3 show_label=false %}
+    {% endfor %}
   </div>
-</div>
+</section>
+{% endif %}
 
-<h2>Working papers</h2>
-
-<div class="pub-card">
-  <div class="pub-header">
-    <a class="pub-title" href="https://ssrn.com/abstract=4906864"><strong>Ownership, Asymmetric Information, and Quality of Care for the Elderly: Evidence From US Nursing Homes During the COVID-19 Pandemic</strong> (with Michael Alexeev and Leonid Polishchuk)</a>
-    <div class="pub-meta"><em>SSRN Working Paper</em></div>
-    <div class="button-group">
-      <a class="mini-btn" onclick="toggleAbstract('abstract_nursing_homes')">Abstract</a>
-    </div>
+{% if publications.size > 0 %}
+<section class="section" aria-labelledby="publications">
+  <h2 class="section__title" id="publications">Publications</h2>
+  <div class="research-list">
+    {% for entry in publications %}
+      {% include research-entry.html entry=entry heading_level=3 show_label=false %}
+    {% endfor %}
   </div>
+</section>
+{% endif %}
 
-  <div id="abstract_nursing_homes" class="abstract-container">
-    A common cause of market failures is asymmetric information. For this reason, the reliance on market incentives and signals requires that quality of goods and services is properly observable and verifiable. This requirement is hard to meet in the case of credence goods, including most social services. In such environment, nonprofit providers can offer additional quality assurance compared to for-profit entities. When quality becomes better observable and verifiable, and hence could earn a market premium, market incentives are closer aligned with social welfare, and the quality gap expected between nonprofit and for-profit provision is likely to narrow. We explore this conjecture theoretically and empirically, using in the empirical part the case of US nursing homes during the COVID-19 pandemic. The pandemic supplied new tangible and publicly observable nursing home performance measures such as infection and death rates among residents. These measures could serve as care quality indicators, revealing aspects and attributes of the nursing home care that remained hidden before the pandemic. The data reveal significant initial gaps between for-profit and nonprofit nursing homes in COVID-19 infection rates. However, in the ensuing catching-up process triggered by increased transparency, these gaps steadily declined, eventually leading to statistical parity between two types of ownership. We explore the role of local market structure in the adjustment of nursing home industry to the pandemic; retroactively evaluate the reliability of the official ranking system in predicting nursing homes' performance; and look for evidence of sustainable learning-by-doing effect of the pandemic.
+{% if in_progress.size > 0 %}
+<section class="section" aria-labelledby="work-in-progress">
+  <h2 class="section__title" id="work-in-progress">Work in progress</h2>
+  <div class="research-list">
+    {%- comment -%}
+      Job market note: when the section above is re-enabled, wrap this include in an
+      "unless entry.id == jmp_id" guard again so the featured paper is not listed twice.
+    {%- endcomment -%}
+    {% for entry in in_progress %}
+      {% include research-entry.html entry=entry heading_level=3 show_label=false %}
+    {% endfor %}
   </div>
-</div>
-
-<h2>Work in progress</h2>
-
-<div class="pub-card">
-  <div class="pub-header">
-    <span class="pub-title"><strong>When Cooperation Drives Continuation</strong></span>
-    <div class="button-group">
-      <a class="mini-btn" onclick="toggleAbstract('abstract_WCDC')">Abstract</a>
-    </div>
-  </div>
-
-  <div id="abstract_WCDC" class="abstract-container">
-    I introduce an indefinitely repeated prisoner's dilemma in which the continuation probability depends on the number of cooperating players: mutual cooperation makes future interaction more likely. Theoretically, the cooperation reward and the post-cooperation continuation probability function as substitutes in sustaining cooperative equilibria. I test this in a laboratory experiment using a 2x2 between-subjects design that independently varies the reward from mutual cooperation and the continuation probability following mutual cooperation. Three main results emerge. First, cooperation increases when a higher continuation probability makes cooperative play supportable as an equilibrium, but not when cooperation is already supportable. Second, early in the experiment, higher payoff rewards have a stronger effect on cooperation than higher continuation probabilities; this asymmetry disappears with experience. Third, strategy estimation reveals substitutability between payoff and continuation incentives at matched levels of strategic uncertainty.
-  </div>
-</div>
-
-<div class="pub-card">
-  <div class="pub-header">
-    <span class="pub-title"><strong>Human Expertise in the Age of AI</strong> (with Ala Avoyan) </span>
-    <div class="button-group">
-      <a class="mini-btn" onclick="toggleAbstract('abstract_AI')">Abstract</a>
-    </div>
-  </div>
-
-  <div id="abstract_AI" class="abstract-container">
-    This study examines whether people believe AI chatbot assistance can substitute for strategic expertise and how these perceptions vary across generations. Using the 11-20 money request game, we measure how participants adjust their strategic sophistication when facing opponents of varying skill levels with or without AI assistance. Our findings suggest that generational differences may play a crucial role in shaping these responses. Older generations appear to respond differently to AI-assisted opponents compared to younger cohorts. We also explore whether participants perceive AI assistance as comparable to human expertise and find early evidence that AI may act as a complement to human expertise, prompting participants to think more deeply. 
-  </div>
-</div>
-
+</section>
+{% endif %}

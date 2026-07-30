@@ -1,0 +1,114 @@
+# Central profile data for the site.
+# Everything here is sourced from files already in this repository
+# (files/Academic_CV.pdf, the previous README/Research/Teaching pages,
+# and files/Syllabus SP24-B251-9998.pdf). Please keep it that way.
+
+name: Ivan Dedyukhin
+role: PhD Candidate in Economics
+institution: Indiana University Bloomington
+institution_url: https://economics.indiana.edu/
+department: Department of Economics
+
+# Short research description (from the previous homepage copy).
+summary: >-
+  I study cooperation under strategic uncertainty, and how people perceive
+  AI assistance relative to human strategic expertise.
+
+# Longer version used on the homepage profile.
+bio_research: >-
+  I study how people sustain cooperation under strategic uncertainty, focusing on
+  settings where present actions influence the likelihood of future interaction.
+  A second strand of my work asks whether people perceive AI assistance as a
+  substitute for strategic expertise, and how those perceptions differ across
+  generations.
+
+fields:
+  - Experimental Economics
+  - Game Theory
+  - Behavioral Economics
+
+# Broader interest list shown on the homepage (all supported by existing content).
+interests:
+  - Experimental Economics
+  - Game Theory
+  - Behavioral Economics
+  - Cooperation and Strategic Uncertainty
+  - Repeated Games
+  - Economics of AI
+
+email: idedyukh@iu.edu
+office: Wylie Hall, 100 South Woodlawn Avenue, Bloomington, IN 47405
+
+cv:
+  url: /files/Academic_CV.pdf
+  # "Last updated" line printed on page 1 of files/Academic_CV.pdf.
+  updated: June 10, 2026
+
+# Advisors, as listed on the previous homepage.
+advisors:
+  - name: Ala Avoyan
+    url: https://www.alaavoyan.com
+  - name: Daniela Puzzello
+    url: https://sites.google.com/view/daniela-puzzello/
+
+# Education, transcribed from files/Academic_CV.pdf.
+education:
+  - degree: Ph.D. Economics
+    institution: Indiana University Bloomington
+    year: 2027 (expected)
+  - degree: M.A. Economics
+    institution: Indiana University Bloomington
+    year: 2024
+  - degree: B.A. Economics
+    institution: New Economic School & Higher School of Economics
+    year: 2022
+
+# ---------------------------------------------------------------------------
+# Job market - DISABLED
+#
+# All job-market content is switched off site-wide for now. To turn it back on,
+# uncomment the `job_market:` block below and follow the four other steps listed
+# in the "Job market - DISABLED" note at the top of README.md.
+#
+# `status`   an availability line, e.g. "On the 2026-2027 economics job market".
+#            Leave as "" to show nothing. Not recorded anywhere in this
+#            repository, so it must be filled in by hand.
+# `paper_id` must match an `id` in _data/research.yml. Setting it is what adds
+#            the "Job Market Paper" label and the featured panel. Not recorded
+#            anywhere in this repository either; "When Cooperation Drives
+#            Continuation" is suggested because it is the only single-authored
+#            experimental project with a complete abstract.
+#
+# job_market:
+#   status: ""
+#   paper_id: when-cooperation-drives-continuation
+# ---------------------------------------------------------------------------
+
+# Profile / footer links. Only entries with a `url` are rendered.
+links:
+  - label: Email
+    url: mailto:idedyukh@iu.edu
+    text: idedyukh@iu.edu
+  - label: CV
+    url: /files/Academic_CV.pdf
+    text: Academic CV (PDF)
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6914508
+    text: SSRN author page
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/ivan-dedyukhin/
+    text: LinkedIn
+  - label: X
+    url: https://x.com/duduhin
+    text: X (Twitter)
+  # TODO(optional): add a GitHub profile URL here if you want one listed.
+
+photo:
+  src: /images/profile-photo-600.jpg
+  # Larger copy used for link previews.
+  large: /images/profile-photo-1200.jpg
+  width: 600
+  height: 600
+  alt: >-
+    Ivan Dedyukhin, a PhD candidate in economics at Indiana University Bloomington,
+    in a dark suit in front of an office window.
