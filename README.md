@@ -67,10 +67,12 @@ both of which are currently commented out.
 
     <p class="profile__summary">{{ profile.bio_research }}</p>
 
+    {% comment %}
     <p class="meta">
       My advisors are
       {% for advisor in profile.advisors %}<a class="inline-link" href="{{ advisor.url }}" target="_blank" rel="noopener noreferrer">{{ advisor.name }}</a>{% unless forloop.last %} and {% endunless %}{% endfor %}.
     </p>
+    {% endcomment %}
 
     <div class="btn-row">
       <a class="btn btn--primary" href="{{ profile.cv.url | relative_url }}" target="_blank" rel="noopener noreferrer">View CV (PDF)</a>
