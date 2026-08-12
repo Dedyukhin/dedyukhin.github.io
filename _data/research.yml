@@ -55,22 +55,24 @@
   authors: with Ala Avoyan
   category: work-in-progress
   featured: true
-  summary: >-
-    Uses the 11-20 money request game to ask whether people treat AI chatbot assistance
-    as a substitute for strategic expertise, and how that judgement differs across
-    generations.
-  abstract: >-
-    This study examines whether people believe AI chatbot assistance can substitute for
-    strategic expertise and how these perceptions vary across generations. Using the
-    11-20 money request game, we measure how participants adjust their strategic
-    sophistication when facing opponents of varying skill levels with or without AI
-    assistance. Our findings suggest that generational differences may play a crucial
-    role in shaping these responses. Older generations appear to respond differently to
-    AI-assisted opponents compared to younger cohorts. We also explore whether
-    participants perceive AI assistance as comparable to human expertise and find early
-    evidence that AI may act as a complement to human expertise, prompting participants
-    to think more deeply.
+  summary: >- Uses the 11-20 money request game to ask whether people treat AI chatbot assistance as a substitute for strategic expertise, and how that judgement differs across generations.
+  abstract: >- This study examines whether people believe AI chatbot assistance can substitute for strategic expertise and how these perceptions vary across generations. Using the 11-20 money request game, we measure how participants adjust their strategic sophistication when facing opponents of varying skill levels with or without AI assistance. Our findings suggest that generational differences may play a crucial role in shaping these responses. Older generations appear to respond differently to AI-assisted opponents compared to younger cohorts. We also explore whether participants perceive AI assistance as comparable to human expertise and find early evidence that AI may act as a complement to human expertise, prompting participants to think more deeply.
   links: []
+
+- id: quasi-hyperbolic-discounting
+  title: Quasi-Hyperbolic Discounting in IRPD: An Experiment
+  category: work-in-progress
+  featured: true
+  summary: >- I study how present-biased time preferences shape cooperation and strategic uncertainty in repeated interactions.
+  abstract: >- This paper studies how non-exponential discounting affects cooperation in repeated strategic interactions. While the experimental literature on infinitely repeated games typically assumes exponential discounting, evidence on intertemporal choice suggests that individuals may place disproportionate weight on immediate outcomes relative to future consequences. I examine how incorporating present-biased preferences changes incentives for cooperation in the infinitely repeated Prisoner’s Dilemma and whether behavior differs from predictions based on standard exponential discounting. I develop theoretical predictions and an experimental design that allows cooperation to be compared across different intertemporal incentive structures. The project aims to better understand the role of time preferences in sustaining cooperation and, more broadly, how the structure of intertemporal incentives interacts with strategic uncertainty in repeated games.
+  # TODO(missing): no paper PDF, slides or replication package for this project exists
+  # in this repository. Add them to files/ and list them here, for example:
+  #   links:
+  #     - label: Paper
+  #       url: /files/<filename>.pdf
+  #       kind: pdf
+  links: []
+
 
 # Not published yet, at your request - uncomment to add it to the Research page.
 # It will appear under "Work in progress". A `summary:` of one or two sentences
