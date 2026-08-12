@@ -62,7 +62,8 @@
   links: []
 
 - id: quasi-hyperbolic-discounting
-  title: Quasi-Hyperbolic Discounting in IRPD: An Experiment
+  # Quoted because the title contains a colon: unquoted YAML values cannot.
+  title: "Quasi-Hyperbolic Discounting in IRPD: An Experiment"
   category: work-in-progress
   featured: true
   summary: >- 
