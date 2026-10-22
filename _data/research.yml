@@ -19,36 +19,37 @@
 # (the previous Research page and files/Academic_CV.pdf). Do not add links to
 # documents that do not exist.
 
-- id: when-cooperation-drives-continuation
-  title: When Cooperation Drives Continuation
-  category: work-in-progress
+- id: when-cooperation-extends-shadow-of-future
+  title: When Cooperation Extends the Shadow of the Future
+  category: working-paper
+  venue: SSRN Working Paper
+  year: 2026
+  status: SSRN working paper, October 2026
   featured: true
   summary: >-
-    An indefinitely repeated prisoner’s dilemma in which mutual cooperation makes
-    future interaction more likely. A 2×2 laboratory experiment tests whether the
-    reward from cooperating and the continuation probability that follows it act as
+    An indefinitely repeated prisoner’s dilemma in which the continuation probability
+    depends on how many players cooperate. A 2×2 laboratory experiment tests whether the
+    payoff from mutual cooperation and the continuation probability it induces act as
     substitutes in sustaining cooperation.
   abstract: >-
     I introduce an indefinitely repeated prisoner’s dilemma in which the continuation
-    probability depends on the number of cooperating players: mutual cooperation makes
-    future interaction more likely. Theoretically, the cooperation reward and the
-    post-cooperation continuation probability function as substitutes in sustaining
-    cooperative equilibria. I test this in a laboratory experiment using a 2×2
-    between-subjects design that independently varies the reward from mutual cooperation
-    and the continuation probability following mutual cooperation. Three main results
-    emerge. First, cooperation increases when a higher continuation probability makes
-    cooperative play supportable as an equilibrium, but not when cooperation is already
-    supportable. Second, early in the experiment, higher payoff rewards have a stronger
-    effect on cooperation than higher continuation probabilities; this asymmetry
-    disappears with experience. Third, strategy estimation reveals substitutability
-    between payoff and continuation incentives at matched levels of strategic uncertainty.
-  # TODO(missing): no paper PDF, slides or replication package for this project exists
-  # in this repository. Add them to files/ and list them here, for example:
-  #   links:
-  #     - label: Paper
-  #       url: /files/<filename>.pdf
-  #       kind: pdf
-  links: []
+    probability depends on how many players cooperate. Theoretically, the payoff from
+    mutual cooperation and the continuation probability it induces act as substitutes in
+    sustaining cooperative equilibria. I test this in a laboratory experiment with a 2×2
+    between-subjects design that independently varies these two parameters. Three results
+    emerge. First, an increase in the continuation probability associated with joint
+    cooperation promotes cooperation only when it makes cooperation sustainable in
+    equilibrium. Second, early in the experiment, payoff incentives raise cooperation more
+    than theoretically equivalent continuation incentives; this asymmetry disappears with
+    experience. Third, estimated strategies display substitutability between the two
+    forces once treatments are matched on strategic uncertainty.
+  links:
+    - label: Paper (PDF)
+      url: /files/WCDC_WP_10-19-26.pdf
+      kind: pdf
+    - label: SSRN
+      url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7637778
+      kind: external
 
 - id: human-expertise-age-of-ai
   title: Human Expertise in the Age of AI
