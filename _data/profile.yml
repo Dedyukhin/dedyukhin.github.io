@@ -75,13 +75,13 @@ education:
 #            repository, so it must be filled in by hand.
 # `paper_id` must match an `id` in _data/research.yml. Setting it is what adds
 #            the "Job Market Paper" label and the featured panel. Not recorded
-#            anywhere in this repository either; "When Cooperation Drives
-#            Continuation" is suggested because it is the only single-authored
-#            experimental project with a complete abstract.
+#            anywhere in this repository either; "When Cooperation Extends the
+#            Shadow of the Future" is suggested because it is the only
+#            single-authored experimental project with a complete abstract.
 #
 # job_market:
 #   status: ""
-#   paper_id: when-cooperation-drives-continuation
+#   paper_id: when-cooperation-extends-shadow-of-future
 # ---------------------------------------------------------------------------
 
 # Profile / footer links. An entry needs either a `url` or `type: copy`.
