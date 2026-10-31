@@ -52,15 +52,33 @@
       kind: external
 
 - id: human-expertise-age-of-ai
-  title: Human Expertise in the Age of AI
+  # Quoted because the title contains a colon: unquoted YAML values cannot.
+  title: "Human Expertise in the Age of AI: Playing Against AI-Assisted Opponents"
   authors: with Ala Avoyan
   category: work-in-progress
   featured: true
-  summary: >- 
-    Uses the 11-20 money request game to ask whether people treat AI chatbot assistance as a substitute for strategic expertise, and how that judgement differs across generations.
-  abstract: >- 
-    This study examines whether people believe AI chatbot assistance can substitute for strategic expertise and how these perceptions vary across generations. Using the 11-20 money request game, we measure how participants adjust their strategic sophistication when facing opponents of varying skill levels with or without AI assistance. Our findings suggest that generational differences may play a crucial role in shaping these responses. Older generations appear to respond differently to AI-assisted opponents compared to younger cohorts. We also explore whether participants perceive AI assistance as comparable to human expertise and find early evidence that AI may act as a complement to human expertise, prompting participants to think more deeply.
-  links: []
+  summary: >-
+    A hybrid lab-online experiment with the 11-20 money request game asks how people
+    play against a counterpart who has access to AI, and whether the answer depends on
+    the counterpart’s expertise and on the player’s age cohort.
+  abstract: >-
+    Most of what we know about how AI changes economic decisions concerns the person who
+    uses it. However, in many interactions what also matters is what our beliefs are of
+    our opponent using AI assistance. In this paper we ask how people play against a
+    counterpart who has access to AI, and whether the answer depends on the expertise of
+    the opponent. In a hybrid experiment, online participants from four age cohorts play
+    the 11-20 money request game against lab participants who are novices or experts in
+    strategic reasoning, with or without an AI assistant. We truthfully communicate
+    opponent information to the participants. We find that opponent description has no
+    effect on people’s requests on average, but people think considerably longer when the
+    opponent is an expert with AI. We conclude that they treat AI as something that
+    amplifies expertise rather than replaces it in this context. Baby Boomers and
+    Millennials hold opposite views of AI effect, which is what hides the overall effect
+    leading to the flat averages.
+  links:
+    - label: Paper (PDF)
+      url: /files/WP_AI-expertise_10-30-26.pdf
+      kind: pdf
 
 - id: quasi-hyperbolic-discounting
   # Quoted because the title contains a colon: unquoted YAML values cannot.
